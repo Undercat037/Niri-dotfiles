@@ -1,2 +1,1 @@
-# Niri-dotfiles
-Dotfiles for Niri Wm
+Просто дотфайли, будуть оновлюватись час від часу
