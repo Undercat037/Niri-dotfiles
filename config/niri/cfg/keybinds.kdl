@@ -6,14 +6,13 @@ binds {
     // ─── noctalia-shell keybinds ───
     // https://docs.noctalia.dev/getting-started/keybinds/
 
-    // Super+Shift+ESCAPE                     { show-hotkey-overlay; }
+    // Super+Shift+ESCAPE                 { show-hotkey-overlay; }
 
     // ─── Applications ───
     Super+T                               hotkey-overlay-title="Open Terminal: kitty " { spawn "kitty"; }
     Super+Ctrl+T                          hotkey-overlay-title="Open Terminal: alacritty " { spawn "alacritty"; }
 
-    Super+R                               hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-
+    
     Super+Z                               hotkey-overlay-title="Open Browser: zen" { spawn "zen-browser"; }
     Super+Ctrl+Z                          hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
     Super+Shift+Ctrl+Z                    hotkey-overlay-title="Open Browser Private: zen" { spawn "zen-browser" "--private-window"; }
@@ -23,17 +22,36 @@ binds {
     Super+Ctrl+C                          hotkey-overlay-title="Open Taskmgr: missioncenter" { spawn "missioncenter"; }
     Super+Alt+C                           hotkey-overlay-title="Open Taskmgr: stacer" { spawn "stacer"; }
 
+    Super+N                               hotkey-overlay-title="File Manager: Nemo" { spawn "nemo"; }
+
     Super+Y                               hotkey-overlay-title="Open sound pad: pwvucontrol" { spawn "pwvucontrol"; }
+
+    // -------------NOCTALIA------------
 
     Super+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Super+Escape                          hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
 
-    Super+N                               hotkey-overlay-title="File Manager: Nemo" { spawn "nemo"; }
+    Super+R                               hotkey-overlay-title="noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    Super+Shift+R                         hotkey-overlay-title="noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher command"; }
+    Super+Ctrl+R                          hotkey-overlay-title="noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher windows"; }
+    Super+Alt+R                           hotkey-overlay-title="noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher settings"; }
+
+    Super+M                               hotkey-overlay-title="noctalia settings" { spawn-sh "qs -c noctalia-shell ipc call settings toggleTab $tab"; }
+    Super+Ctrl+M                          hotkey-overlay-title="noctalia wigets" { spawn-sh "qs -c noctalia-shell ipc call desktopWidgets edit"; }
+    Super+Alt+M                           hotkey-overlay-title="noctalia settings" { spawn-sh "qs -c noctalia-shell ipc call settings toggleTab $tab"; }
+
+    Super+V                               hotkey-overlay-title="noctalia clipbord" { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+
+    Super+U                               hotkey-overlay-title="noctalia wall" { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; }
+    Super+Ctrl+U                          hotkey-overlay-title="noctalia wall rand" { spawn-sh "qs -c noctalia-shell ipc call wallpaper random"; }
     
     Super+P                               hotkey-overlay-title="Restart Noctalia" { spawn-sh "killall -9 qs; qs -c noctalia-shell"; }
 
-    Super+I                               { spawn-sh "qs -c noctalia-shell ipc call plugin:keybind-cheatsheet toggle"; }
+    Super+I                               hotkey-overlay-title="Cheet Sheet" { spawn-sh "qs -c noctalia-shell ipc call plugin:keybind-cheatsheet toggle"; }
  
+    Super+Alt+B                           hotkey-overlay-title="calendar" { spawn-sh "qs -c noctalia-shell ipc call calendar toggle"; }
+    Super+Ctrl+B                          hotkey-overlay-title="calendar" { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
+    Super+B                               hotkey-overlay-title="noctalia control" { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
 
     //Super+Alt+M { spawn "sh" "-c" "pkill rofi || ~/.config/niri/scripts/clipboard-manager.sh"; }
 

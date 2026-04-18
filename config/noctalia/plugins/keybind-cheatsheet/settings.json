@@ -4,16 +4,44 @@
       "title": "Noctalia",
       "binds": [
         {
-          "keys": "Super + R",
-          "desc": "Open App Launcher: noctalia launcher"
-        },
-        {
           "keys": "Super + ALT + L",
           "desc": "Lock Screen: noctalia lock"
         },
         {
           "keys": "Super + Escape",
           "desc": "Session Menu: noctalia sessionMenu"
+        },
+        {
+          "keys": "Super + R",
+          "desc": "noctalia launcher"
+        },
+        {
+          "keys": "Super + M",
+          "desc": "noctalia control"
+        },
+        {
+          "keys": "Super + Alt + M",
+          "desc": "noctalia wigets"
+        },
+        {
+          "keys": "Super + Ctrl + M",
+          "desc": "noctalia settings"
+        },
+        {
+          "keys": "Super + V",
+          "desc": "noctalia clipbord"
+        },
+        {
+          "keys": "Super + U",
+          "desc": "noctalia wall"
+        },
+        {
+          "keys": "Super + Ctrl + U",
+          "desc": "noctalia wall rand"
+        },
+        {
+          "keys": "Super + I",
+          "desc": "Run: qs -c noctalia-shell ipc call plugin:keybind-cheatsheet toggle"
         },
         {
           "keys": "Vol Up",
@@ -97,12 +125,16 @@
           "desc": "Open Taskmgr: stacer"
         },
         {
+          "keys": "Super + N",
+          "desc": "File Manager: Nemo"
+        },
+        {
           "keys": "Super + Y",
           "desc": "Open sound pad: pwvucontrol"
         },
         {
-          "keys": "Super + N",
-          "desc": "File Manager: Nemo"
+          "keys": "Super + P",
+          "desc": "Restart Noctalia"
         },
         {
           "keys": "PrtSc",
@@ -445,10 +477,6 @@
         {
           "keys": "Super + Shift + E",
           "desc": "Toggle Column Tabbed Display"
-        },
-        {
-          "keys": "Super + I",
-          "desc": "Toggle Keyboard Shortcuts Inhibit"
         }
       ]
     }

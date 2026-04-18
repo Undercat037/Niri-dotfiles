@@ -9,7 +9,7 @@
         "density": "comfortable",
         "enableClipPreview": true,
         "enableClipboardChips": true,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "enableClipboardSmartIcons": true,
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
@@ -19,12 +19,12 @@
         "overviewLayer": false,
         "pinnedApps": [
         ],
-        "position": "follow_bar",
+        "position": "bottom_center",
         "screenshotAnnotationTool": "",
         "showCategories": true,
         "showIconBackground": false,
         "sortByMostUsed": true,
-        "terminalCommand": "alacritty -e",
+        "terminalCommand": "kitty -e",
         "viewMode": "grid"
     },
     "audio": {
@@ -320,10 +320,13 @@
                     "id": "Bluetooth"
                 },
                 {
+                    "id": "AirplaneMode"
+                },
+                {
                     "id": "WallpaperSelector"
                 },
                 {
-                    "id": "NoctaliaPerformance"
+                    "id": "DarkMode"
                 }
             ],
             "right": [
@@ -334,10 +337,13 @@
                     "id": "PowerProfile"
                 },
                 {
+                    "id": "NoctaliaPerformance"
+                },
+                {
                     "id": "KeepAwake"
                 },
                 {
-                    "id": "DarkMode"
+                    "id": "NightLight"
                 }
             ]
         }
@@ -382,7 +388,7 @@
         "colorizeIcons": false,
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
-        "dockType": "floating",
+        "dockType": "attached",
         "enabled": false,
         "floatingRatio": 1,
         "groupApps": false,
@@ -420,12 +426,12 @@
         "clockFormat": "hh\\nmm\\nss",
         "clockStyle": "digital",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.1,
+        "dimmerOpacity": 0.19,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
         "enableShadows": true,
-        "forceBlackScreenCorners": false,
+        "forceBlackScreenCorners": true,
         "iRadiusRatio": 0.92,
         "keybinds": {
             "keyDown": [
@@ -463,13 +469,13 @@
         "radiusRatio": 0.66,
         "reverseScroll": false,
         "scaleRatio": 1,
-        "screenRadiusRatio": 1,
-        "shadowDirection": "bottom_right",
+        "screenRadiusRatio": 0.58,
+        "shadowDirection": "top_right",
         "shadowOffsetX": 2,
-        "shadowOffsetY": 3,
+        "shadowOffsetY": -2,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
-        "showScreenCorners": false,
+        "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true,
         "smoothScrollEnabled": true,
         "telemetryEnabled": false
@@ -542,8 +548,8 @@
     "notifications": {
         "backgroundOpacity": 1,
         "clearDismissed": false,
-        "criticalUrgencyDuration": 13,
-        "density": "compact",
+        "criticalUrgencyDuration": 15,
+        "density": "default",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": true,
@@ -553,7 +559,7 @@
         "lowUrgencyDuration": 2,
         "monitors": [
         ],
-        "normalUrgencyDuration": 3,
+        "normalUrgencyDuration": 5,
         "overlayLayer": true,
         "respectExpireTimeout": true,
         "saveToHistory": {
@@ -736,10 +742,10 @@
         "fontDefaultScale": 1,
         "fontFixed": "monospace",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.93,
+        "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
-        "settingsPanelMode": "window",
+        "settingsPanelMode": "attached",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
         "translucentWidgets": false
