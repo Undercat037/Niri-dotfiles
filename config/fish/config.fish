@@ -126,3 +126,8 @@ alias dcs-rust-aarch-build-rel='cargo ndk -t aarch64-linux-android build --relea
 alias dcs-rust-aarch-build='cargo ndk -t aarch64-linux-android build'
 
 end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/deltacat/.lmstudio/bin
+# End of LM Studio CLI section
+

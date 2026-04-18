@@ -1,0 +1,181 @@
+binds {
+
+    // ────────────── Keybindings ──────────────
+    // https://github.com/YaLTeR/niri/wiki/Configuration:-Key-Bindings
+
+    // ─── noctalia-shell keybinds ───
+    // https://docs.noctalia.dev/getting-started/keybinds/
+
+    // Super+Shift+ESCAPE                     { show-hotkey-overlay; }
+
+    // ─── Applications ───
+    Super+T                               hotkey-overlay-title="Open Terminal: kitty " { spawn "kitty"; }
+    Super+Ctrl+T                          hotkey-overlay-title="Open Terminal: alacritty " { spawn "alacritty"; }
+
+    Super+R                               hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+
+    Super+Z                               hotkey-overlay-title="Open Browser: zen" { spawn "zen-browser"; }
+    Super+Ctrl+Z                          hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
+    Super+Shift+Ctrl+Z                    hotkey-overlay-title="Open Browser Private: zen" { spawn "zen-browser" "--private-window"; }
+
+    Super+C                               hotkey-overlay-title="Open TG: AyuGram" { spawn "AyuGram"; }
+    Super+Shift+C                         hotkey-overlay-title="Open IDE: vscodium" { spawn "sh" "-c" "vscodium --ozone-platform=wayland"; }
+    Super+Ctrl+C                          hotkey-overlay-title="Open Taskmgr: missioncenter" { spawn "missioncenter"; }
+    Super+Alt+C                           hotkey-overlay-title="Open Taskmgr: stacer" { spawn "stacer"; }
+
+    Super+Y                               hotkey-overlay-title="Open sound pad: pwvucontrol" { spawn "pwvucontrol"; }
+
+    Super+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    Super+Escape                          hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+
+    Super+N                               hotkey-overlay-title="File Manager: Nemo" { spawn "nemo"; }
+    
+    Super+P                               hotkey-overlay-title="Restart Noctalia" { spawn-sh "killall -9 qs; qs -c noctalia-shell"; }
+
+    Super+I                               { spawn-sh "qs -c noctalia-shell ipc call plugin:keybind-cheatsheet toggle"; }
+ 
+
+    //Super+Alt+M { spawn "sh" "-c" "pkill rofi || ~/.config/niri/scripts/clipboard-manager.sh"; }
+
+    // ─── Media Controls ───
+    XF86AudioRaiseVolume                  allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
+    XF86AudioLowerVolume                  allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume decrease"; }
+    XF86AudioMute                         allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
+    XF86AudioMicMute                      allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume muteInput"; }
+    XF86AudioNext                         allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media next"; }
+    XF86AudioPrev                         allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media previous"; }
+    XF86AudioPlay                         allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media playPause"; }
+    XF86AudioPause                        allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call media playPause"; }
+
+    // ─── Brightness Controls ───
+    XF86MonBrightnessUp                   allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness increase"; }
+    XF86MonBrightnessDown                 allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness decrease"; }
+
+    // ─── Window Movement and Focus ───
+    Super+Q                               { close-window; }
+
+    Super+Left                            { focus-column-left; }
+    Super+H                               { focus-column-left; }
+    Super+A                               { focus-column-left; }
+    
+    Super+Right                           { focus-column-right; }
+    Super+L                               { focus-column-right; }
+    Super+D                               { focus-column-right; }
+
+    Super+Up                              { focus-window-up; }
+    Super+K                               { focus-window-up; }
+    Super+W                               { focus-window-up; }
+
+    Super+Down                            { focus-window-down; }
+    Super+J                               { focus-window-down; }
+    Super+S                               { focus-window-down; }
+
+
+
+    Super+Shift+Left                      { move-column-left; }
+    Super+Shift+H                         { move-column-left; }
+    Super+Shift+A                         { move-column-left; }
+
+    Super+Shift+Right                     { move-column-right; }
+    Super+Shift+L                         { move-column-right; }
+    Super+Shift+D                         { move-column-right; }
+
+    Super+Shift+UP                        { move-window-up; }
+    Super+Shift+K                         { move-window-up; }
+    Super+Shift+W                         { move-window-up; }
+
+    Super+Shift+Down                      { move-window-down; }
+    Super+Shift+J                         { move-window-down; }
+    Super+Shift+S                         { move-window-down; }
+
+
+
+    //Super+Home                          { focus-column-first; }
+    //Super+End                           { focus-column-last; }
+    //Super+CTRL+Home                     { move-column-to-first; }
+    //Super+CTRL+End                      { move-column-to-last; }
+
+    //Super+Shift+Left                    { focus-monitor-left; }
+    //Super+Shift+Right                   { focus-monitor-right; }
+    //Super+Shift+UP                      { focus-monitor-up; }
+    //Super+Shift+Down                    { focus-monitor-down; }
+
+    //Super+Shift+CTRL+Left               { move-column-to-monitor-left; }
+    //Super+Shift+CTRL+Right              { move-column-to-monitor-right; }
+    //Super+Shift+CTRL+UP                 { move-column-to-monitor-up; }
+    //Super+Shift+CTRL+Down               { move-column-to-monitor-down; }
+
+    // ─── Workspace Switching ───
+    Super+WheelScrollDown                 cooldown-ms=150 { focus-workspace-down; }
+    Super+WheelScrollUp                   cooldown-ms=150 { focus-workspace-up; }
+    Super+CTRL+WheelScrollDown            cooldown-ms=150 { move-column-to-workspace-down; }
+    Super+CTRL+WheelScrollUp              cooldown-ms=150 { move-column-to-workspace-up; }
+
+    Super+WheelScrollRight                { focus-column-right; }
+    Super+WheelScrollLeft                 { focus-column-left; }
+    Super+CTRL+WheelScrollRight           { move-column-right; }
+    Super+CTRL+WheelScrollLeft            { move-column-left; }
+
+    Super+Shift+WheelScrollDown           { focus-column-right; }
+    Super+Shift+WheelScrollUp             { focus-column-left; }
+    Super+CTRL+Shift+WheelScrollDown      { move-column-right; }
+    Super+CTRL+Shift+WheelScrollUp        { move-column-left; }
+
+
+    
+
+    Super+1                               { focus-workspace 1; }
+    Super+2                               { focus-workspace 2; }
+    Super+3                               { focus-workspace 3; }
+    Super+4                               { focus-workspace 4; }
+    Super+5                               { focus-workspace 5; }
+    Super+6                               { focus-workspace 6; }
+    Super+7                               { focus-workspace 7; }
+    Super+8                               { focus-workspace 8; }
+    Super+9                               { focus-workspace 9; }
+    Super+0                               { focus-workspace 10; }
+
+    Super+Shift+1                         { move-column-to-workspace 1; }
+    Super+Shift+2                         { move-column-to-workspace 2; }
+    Super+Shift+3                         { move-column-to-workspace 3; }
+    Super+Shift+4                         { move-column-to-workspace 4; }
+    Super+Shift+5                         { move-column-to-workspace 5; }
+    Super+Shift+6                         { move-column-to-workspace 6; }
+    Super+Shift+7                         { move-column-to-workspace 7; }
+    Super+Shift+8                         { move-column-to-workspace 8; }
+    Super+Shift+9                         { move-column-to-workspace 9; }
+    Super+Shift+0                         { move-column-to-workspace 10; }
+
+    Super+TAB                             repeat=false { toggle-overview; }
+
+    // ─── Layout Controls ───
+    Super+CTRL+A                          { set-column-width "-10%"; }
+    Super+CTRL+D                          { set-column-width "+10%"; }
+    Super+CTRL+W                          { set-window-height "-10%"; }
+    Super+CTRL+S                          { set-window-height "+10%"; }
+
+    // ─── Superes ───
+    Super+F                               { toggle-window-floating; }
+
+    Super+CTRL+E                          { expand-column-to-available-width; }
+    Super+ALT+E                           { center-column; }
+    Super+E                               { fullscreen-window; }
+    Super+Shift+E                         { toggle-column-tabbed-display; }
+
+    // ─── Screenshots ───
+
+    Print                                 { spawn "sh" "-c" "~/.config/niri/scripts/take-screenshot.sh"; }
+    Shift+Print                           { spawn "sh" "-c" "grim -g \"$(slurp && sleep 0.1)\" - | wl-copy"; }
+    Alt+Print                             { spawn "sh" "-c" "~/.config/niri/scripts/rice-screenshot.sh"; }
+    Ctrl+Shift+Print                      { spawn "sh" "-c" "~/.config/niri/scripts/take-static-screenshot.sh"; }
+
+    //CTRL+Shift+1                          { screenshot; }
+    //CTRL+Shift+Print                      { screenshot-screen; }
+    //CTRL+Shift+3                          { screenshot-window; }
+
+        
+    // ─── Exit / Power ───
+    Super+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
+    Super+Shift+O                         { quit; }
+}
+
