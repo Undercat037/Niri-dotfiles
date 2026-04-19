@@ -8,6 +8,27 @@
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
         XDG_CURRENT_DESKTOP "niri"
         XDG_SESSION_TYPE "wayland"
+        
+        GDK_BACKEND "wayland,x11"
+        GTK_APPLICATION_PREFER_DARK_THEME "1"
+        XDG_MENU_PREFIX "arch-"
+
+        // GBM_BACKEND "nvidia-drm"
+        __GLX_VENDOR_LIBRARY_NAME "nvidia"
+        WLR_NO_HARDWARE_CURSORS "1"
+        __GL_GSYNC_ALLOWED "1"
+        __GL_VRR_ALLOWED "1"
+        __GL_SHADER_DISK_CACHE "1"
+        __GL_SHADER_DISK_CACHE_PATH "/home/deltacat/.cache/nvidia/GLCache"
+        // Для NVIDIA на Wayland — важно для VA-API/NVENC в OBS
+        LIBVA_DRIVER_NAME "nvidia"
+        NVD_BACKEND "direct"
+
+        SDL_VIDEO_DRIVER "wayland"
+        SDL_VIDEO_DRIVER "wayland"
+        SDL_AUDIO_DRIVER "pulse"
+
+        STEAM_FORCE_DESKTOPUI_SCALING "1"
     }
 
     cursor {

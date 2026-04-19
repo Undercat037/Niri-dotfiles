@@ -18,6 +18,15 @@
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
+            "com.usebottles.bottles.App_89201ef4861c5375f72078f34c72c98e5b44a437",
+            "com.usebottles.bottles",
+            "zen",
+            "obsidian",
+            "com.obsproject.Studio",
+            "vscodium-wayland",
+            "org.gnome.DiskUtility",
+            "org.kde.krita",
+            "steam"
         ],
         "position": "bottom_center",
         "screenshotAnnotationTool": "",
@@ -732,6 +741,10 @@
             {
                 "enabled": true,
                 "id": "zenBrowser"
+            },
+            {
+                "enabled": true,
+                "id": "discord"
             }
         ],
         "enableUserTheming": false
