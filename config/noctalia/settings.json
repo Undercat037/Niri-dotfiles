@@ -26,7 +26,16 @@
             "vscodium-wayland",
             "org.gnome.DiskUtility",
             "org.kde.krita",
-            "steam"
+            "steam",
+            "itch",
+            "rog-control-center",
+            "garuda-toolbox",
+            "org.cachyos.KernelManager",
+            "com.usebottles.bottles.App_230728d87fd4977786b5e3df18ab44e6849d14d2",
+            "com.usebottles.bottles.App_827cf4da789ca573d576dcd85b277e12a115a68f",
+            "io.github.ilya_zlobintsev.LACT",
+            "com.usebottles.bottles.App_e4b7423263950d4ae3c55506ac04ae8c8c3d35d6",
+            "com.usebottles.bottles.App_5d9bafdbe275d2ecf8d4d5e254e6743643c9214a"
         ],
         "position": "bottom_center",
         "screenshotAnnotationTool": "",
@@ -87,21 +96,6 @@
         "widgetSpacing": 9,
         "widgets": {
             "center": [
-                {
-                    "defaultSettings": {
-                        "autoHeight": true,
-                        "cheatsheetData": [
-                        ],
-                        "columnCount": 3,
-                        "detectedCompositor": "",
-                        "hyprlandConfigPath": "~/.config/hypr/hyprland.conf",
-                        "modKeyVariable": "$mod",
-                        "niriConfigPath": "~/.config/niri/config.kdl",
-                        "windowHeight": 0,
-                        "windowWidth": 1400
-                    },
-                    "id": "plugin:keybind-cheatsheet"
-                }
             ],
             "left": [
                 {
@@ -123,12 +117,12 @@
                     "showCpuFreq": false,
                     "showCpuTemp": true,
                     "showCpuUsage": true,
-                    "showDiskAvailable": false,
+                    "showDiskAvailable": true,
                     "showDiskUsage": false,
                     "showDiskUsageAsPercent": false,
                     "showGpuTemp": false,
                     "showLoadAverage": false,
-                    "showMemoryAsPercent": false,
+                    "showMemoryAsPercent": true,
                     "showMemoryUsage": true,
                     "showNetworkStats": false,
                     "showSwapUsage": false,
@@ -156,6 +150,14 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
+                },
+                {
+                    "hideWhenZero": false,
+                    "hideWhenZeroUnread": false,
+                    "iconColor": "none",
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true,
+                    "unreadBadgeColor": "primary"
                 },
                 {
                     "compactMode": false,
@@ -187,13 +189,6 @@
             ],
             "right": [
                 {
-                    "displayMode": "forceOpen",
-                    "iconColor": "none",
-                    "id": "KeyboardLayout",
-                    "showIcon": true,
-                    "textColor": "none"
-                },
-                {
                     "blacklist": [
                     ],
                     "chevronColor": "none",
@@ -214,12 +209,11 @@
                     "useCustomFont": false
                 },
                 {
-                    "hideWhenZero": false,
-                    "hideWhenZeroUnread": false,
+                    "displayMode": "forceOpen",
                     "iconColor": "none",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "primary"
+                    "id": "KeyboardLayout",
+                    "showIcon": true,
+                    "textColor": "none"
                 },
                 {
                     "displayMode": "onhover",
@@ -532,7 +526,7 @@
         "weatherTaliaMascotAlways": false
     },
     "network": {
-        "bluetoothAutoConnect": true,
+        "bluetoothAutoConnect": false,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
         "bluetoothRssiPollIntervalMs": 60000,
