@@ -172,10 +172,10 @@ binds {
     Super+TAB                             repeat=false { toggle-overview; }
 
     // ─── Layout Controls ───
-    Super+CTRL+A                          { set-column-width "-10%"; }
-    Super+CTRL+D                          { set-column-width "+10%"; }
-    Super+CTRL+W                          { set-window-height "-10%"; }
-    Super+CTRL+S                          { set-window-height "+10%"; }
+    Super+CTRL+A                          { set-column-width "-5%"; }
+    Super+CTRL+D                          { set-column-width "+5%"; }
+    Super+CTRL+W                          { set-window-height "-5%"; }
+    Super+CTRL+S                          { set-window-height "+5%"; }
 
     // ─── Superes ───
     Super+F                               { toggle-window-floating; }

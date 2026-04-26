@@ -9,7 +9,7 @@
         XDG_CURRENT_DESKTOP "niri"
         XDG_SESSION_TYPE "wayland"
         
-        GDK_BACKEND "wayland,x11"
+        GDK_BACKEND "nvidia-drm,wayland,x11"
         GTK_APPLICATION_PREFER_DARK_THEME "1"
         XDG_MENU_PREFIX "arch-"
 

@@ -35,7 +35,9 @@
             "com.usebottles.bottles.App_827cf4da789ca573d576dcd85b277e12a115a68f",
             "io.github.ilya_zlobintsev.LACT",
             "com.usebottles.bottles.App_e4b7423263950d4ae3c55506ac04ae8c8c3d35d6",
-            "com.usebottles.bottles.App_5d9bafdbe275d2ecf8d4d5e254e6743643c9214a"
+            "com.usebottles.bottles.App_5d9bafdbe275d2ecf8d4d5e254e6743643c9214a",
+            "figma-linux",
+            "io.github.elyprismlauncher.ElyPrismLauncher"
         ],
         "position": "bottom_center",
         "screenshotAnnotationTool": "",
@@ -235,10 +237,10 @@
                 },
                 {
                     "colorizeDistroLogo": false,
-                    "colorizeSystemIcon": "none",
+                    "colorizeSystemIcon": "secondary",
                     "colorizeSystemText": "none",
                     "customIconPath": "",
-                    "enableColorization": false,
+                    "enableColorization": true,
                     "icon": "noctalia",
                     "id": "ControlCenter",
                     "useDistroLogo": false
@@ -284,7 +286,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "eDP-1",
-        "predefinedScheme": "Miasma",
+        "predefinedScheme": "Cream",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -502,9 +504,9 @@
     "idle": {
         "customCommands": "[]",
         "enabled": false,
-        "fadeDuration": 5,
+        "fadeDuration": 9,
         "lockCommand": "",
-        "lockTimeout": 660,
+        "lockTimeout": 900,
         "resumeLockCommand": "",
         "resumeScreenOffCommand": "",
         "resumeSuspendCommand": "",
@@ -628,36 +630,36 @@
                 "action": "hibernate",
                 "command": "",
                 "countdownEnabled": true,
-                "enabled": true,
-                "keybind": "3"
+                "enabled": false,
+                "keybind": ""
             },
             {
                 "action": "reboot",
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "4"
+                "keybind": "3"
             },
             {
                 "action": "logout",
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "5"
+                "keybind": "4"
             },
             {
                 "action": "shutdown",
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "6"
+                "keybind": "5"
             },
             {
                 "action": "rebootToUefi",
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "7"
+                "keybind": "6"
             },
             {
                 "action": "userspaceReboot",
@@ -808,6 +810,90 @@
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/ign_megumin_dark.png",
                 "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Kanagawa",
+                "darkMode": true,
+                "generationMethod": "fruit-salad",
+                "paletteColors": [
+                    "#ffb86b",
+                    "#fbba73",
+                    "#c5cc7a",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/ddg_1774782676929757720.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "fruit-salad",
+                "paletteColors": [
+                    "#ffb3ad",
+                    "#ffb3ad",
+                    "#f5bc6f",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/halflife_city17_wallpaper.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "fruit-salad",
+                "paletteColors": [
+                    "#d8b9ff",
+                    "#d7bafb",
+                    "#ffb0cc",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/My-Burden-is-Light.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "fruit-salad",
+                "paletteColors": [
+                    "#f9acfa",
+                    "#edb4eb",
+                    "#ffb3b1",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/indiecross.webp",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#c5c0ff",
+                    "#c8c4dc",
+                    "#ebb8d0",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/LpUcwjZ.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cream",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#a9b665",
+                    "#d8a657",
+                    "#7db2ba",
+                    "#ea6962"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/shougan_castle.png",
+                "useWallpaperColors": false
             }
         ],
         "fillColor": "#000000",
@@ -824,8 +910,8 @@
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
         "skipStartupTransition": false,
-        "solidColor": "#1a1a2e",
-        "sortOrder": "name",
+        "solidColor": "#2a2a2a",
+        "sortOrder": "random",
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
         "transitionType": [
