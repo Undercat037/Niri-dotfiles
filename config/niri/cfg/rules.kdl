@@ -17,6 +17,10 @@
     }
 
     layer-rule {
-        match namespace="^noctalia-wallpaper*"
+        match namespace="^noctalia-overview*"
         place-within-backdrop true
+    }
+
+    layer-rule {
+        match namespace="^noctalia-wallpaper*"
     }

@@ -286,10 +286,10 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "eDP-1",
-        "predefinedScheme": "Cream",
+        "predefinedScheme": "Rose Pine",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -381,8 +381,21 @@
                     {
                         "id": "Weather",
                         "roundedCorners": true,
-                        "scale": 1.1985590565702486,
+                        "scale": 1.082032481625919,
                         "showBackground": true,
+                        "x": 240,
+                        "y": 140
+                    },
+                    {
+                        "clockColor": "none",
+                        "clockStyle": "binary",
+                        "customFont": "Noto Sans Elymaic",
+                        "format": "HH:mm\\nd MMMM yyyy",
+                        "id": "Clock",
+                        "roundedCorners": true,
+                        "scale": 1.0628706998813762,
+                        "showBackground": true,
+                        "useCustomFont": true,
                         "x": 60,
                         "y": 140
                     }
@@ -435,7 +448,7 @@
         "clockFormat": "hh\\nmm\\nss",
         "clockStyle": "digital",
         "compactLockScreen": false,
-        "dimmerOpacity": 0.19,
+        "dimmerOpacity": 0.27,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": true,
@@ -894,6 +907,48 @@
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/shougan_castle.png",
                 "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cream",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#a9b665",
+                    "#d8a657",
+                    "#7db2ba",
+                    "#ea6962"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-4851rk_3840x2160.png",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cream",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#a9b565",
+                    "#d8a657",
+                    "#7db2b9",
+                    "#ea6962"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-jexovp.png",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Rose Pine",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb4a6",
+                    "#e7bdb5",
+                    "#dcc48c",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-5wr5e9.jpg",
+                "useWallpaperColors": true
             }
         ],
         "fillColor": "#000000",
@@ -902,13 +957,13 @@
         "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
         ],
-        "overviewBlur": 0.4,
-        "overviewEnabled": false,
-        "overviewTint": 0.6,
-        "panelPosition": "follow_bar",
+        "overviewBlur": 0.72,
+        "overviewEnabled": true,
+        "overviewTint": 0.73,
+        "panelPosition": "top_center",
         "randomIntervalSec": 300,
         "setWallpaperOnAllMonitors": true,
-        "showHiddenFiles": false,
+        "showHiddenFiles": true,
         "skipStartupTransition": false,
         "solidColor": "#2a2a2a",
         "sortOrder": "random",
