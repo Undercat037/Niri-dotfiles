@@ -29,6 +29,8 @@
         SDL_AUDIO_DRIVER "pulse"
 
         STEAM_FORCE_DESKTOPUI_SCALING "1"
+
+        DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1 "1" 
     }
 
     cursor {
