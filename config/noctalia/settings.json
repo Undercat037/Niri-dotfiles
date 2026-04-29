@@ -807,36 +807,8 @@
                     "#bb7744",
                     "#b36d43"
                 ],
-                "path": "/home/deltacat/Pictures/Wallpapers/a_man_standing_in_a_room_with_many_machines.jpg",
-                "useWallpaperColors": false
-            },
-            {
-                "appearance": "dark",
-                "colorScheme": "Miasma",
-                "darkMode": true,
-                "generationMethod": "rainbow",
-                "paletteColors": [
-                    "#c9a554",
-                    "#b36d43",
-                    "#bb7744",
-                    "#b36d43"
-                ],
                 "path": "/home/deltacat/Pictures/Wallpapers/ign_megumin_dark.png",
                 "useWallpaperColors": false
-            },
-            {
-                "appearance": "dark",
-                "colorScheme": "Kanagawa",
-                "darkMode": true,
-                "generationMethod": "fruit-salad",
-                "paletteColors": [
-                    "#ffb86b",
-                    "#fbba73",
-                    "#c5cc7a",
-                    "#ffb4ab"
-                ],
-                "path": "/home/deltacat/Pictures/Wallpapers/ddg_1774782676929757720.jpg",
-                "useWallpaperColors": true
             },
             {
                 "appearance": "dark",
@@ -864,20 +836,6 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/My-Burden-is-Light.jpg",
-                "useWallpaperColors": true
-            },
-            {
-                "appearance": "dark",
-                "colorScheme": "Eldritch",
-                "darkMode": true,
-                "generationMethod": "fruit-salad",
-                "paletteColors": [
-                    "#f9acfa",
-                    "#edb4eb",
-                    "#ffb3b1",
-                    "#ffb4ab"
-                ],
-                "path": "/home/deltacat/Pictures/Wallpapers/indiecross.webp",
                 "useWallpaperColors": true
             },
             {
@@ -949,6 +907,20 @@
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-5wr5e9.jpg",
                 "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Rose Pine",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb597",
+                    "#e7beae",
+                    "#d2c78f",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-5wr5e9-gruvbox.jpg",
+                "useWallpaperColors": true
             }
         ],
         "fillColor": "#000000",
@@ -985,7 +957,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "",
+        "wallhavenQuery": "Voices o",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
