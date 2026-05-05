@@ -189,8 +189,17 @@
                     "useFixedWidth": false
                 },
                 {
-                    "iconColor": "none",
-                    "id": "WallpaperSelector"
+                    "defaultSettings": {
+                        "activeBackend": "qt6-multimedia",
+                        "automationMode": "random",
+                        "automationTime": 300,
+                        "fillMode": "fit",
+                        "mpvSocket": "/tmp/mpv-socket",
+                        "profile": "default",
+                        "volume": 1,
+                        "wallpapersFolder": "~/Pictures/Wallpapers"
+                    },
+                    "id": "plugin:video-wallpaper"
                 }
             ],
             "right": [
@@ -282,11 +291,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "rainbow",
+        "generationMethod": "monochrome",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "eDP-1",
-        "predefinedScheme": "Rose Pine",
+        "predefinedScheme": "Eldritch",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": true
@@ -826,13 +835,13 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Eldritch",
+                "colorScheme": "Rose Pine",
                 "darkMode": true,
-                "generationMethod": "fruit-salad",
+                "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#d8b9ff",
-                    "#d7bafb",
                     "#ffb0cc",
+                    "#e2bdc8",
+                    "#f0bc95",
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/My-Burden-is-Light.jpg",
@@ -886,9 +895,9 @@
                 "darkMode": true,
                 "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#a9b565",
+                    "#a9b665",
                     "#d8a657",
-                    "#7db2b9",
+                    "#7db2ba",
                     "#ea6962"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-jexovp.png",
@@ -920,6 +929,118 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-5wr5e9-gruvbox.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb4a8",
+                    "#e7bdb6",
+                    "#dec48c",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-4lvezl.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb4ab",
+                    "#e7bdb8",
+                    "#e0c38c",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-95mdxk.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffaddf",
+                    "#debece",
+                    "#f4ba9f",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven_0jq6wm.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb2b7",
+                    "#e6bdbe",
+                    "#e7c08e",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-45j1z9_3840x2160.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb4a3",
+                    "#e7bdb4",
+                    "#dbc58c",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-4y3z5d_3840x2160.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#c8bfff",
+                    "#c9c3dc",
+                    "#ecb8ce",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven_md99zy.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Rose Pine",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb4ab",
+                    "#e7bdb8",
+                    "#e0c38c",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-49r83k.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Eldritch",
+                "darkMode": true,
+                "generationMethod": "monochrome",
+                "paletteColors": [
+                    "#ffffff",
+                    "#c6c6c6",
+                    "#e2e2e2",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-jekg6w.png",
                 "useWallpaperColors": true
             }
         ],
@@ -957,7 +1078,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "Voices o",
+        "wallhavenQuery": "No game no life",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
