@@ -31,6 +31,8 @@ binds {
 
     Super+Y                               hotkey-overlay-title="Open sound pad: pwvucontrol" { spawn "pwvucontrol"; }
 
+    Super+Alt+Y                           { spawn "sh" "-c" "hyprpicker | wl-copy"; }
+
     // -------------NOCTALIA------------
 
     Super+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
@@ -87,11 +89,11 @@ binds {
 
     Super+Up                              { focus-window-up; }
     Super+K                               { focus-window-up; }
-    Super+W                               { focus-window-up; }
+    Super+W                               { focus-workspace-up; }
 
     Super+Down                            { focus-window-down; }
     Super+J                               { focus-window-down; }
-    Super+S                               { focus-window-down; }
+    Super+S                               { focus-workspace-down; }
 
 
 
@@ -105,11 +107,13 @@ binds {
 
     Super+Shift+UP                        { move-window-up; }
     Super+Shift+K                         { move-window-up; }
-    Super+Shift+W                         { move-window-up; }
+    Super+Alt+W                           { move-window-up; }
+    Super+Shift+W                         { move-window-to-workspace-up; }
 
     Super+Shift+Down                      { move-window-down; }
     Super+Shift+J                         { move-window-down; }
-    Super+Shift+S                         { move-window-down; }
+    Super+Alt+S                           { move-window-down; }
+    Super+Shift+S                         { move-window-to-workspace-down; }
 
 
 
@@ -147,6 +151,7 @@ binds {
 
     
 
+    Super+Grave                           { focus-workspace 9; }
     Super+1                               { focus-workspace 1; }
     Super+2                               { focus-workspace 2; }
     Super+3                               { focus-workspace 3; }
@@ -158,6 +163,8 @@ binds {
     Super+9                               { focus-workspace 9; }
     Super+0                               { focus-workspace 10; }
 
+
+    Super+Shift+Grave                     { move-column-to-workspace 9; }
     Super+Shift+1                         { move-column-to-workspace 1; }
     Super+Shift+2                         { move-column-to-workspace 2; }
     Super+Shift+3                         { move-column-to-workspace 3; }
@@ -179,11 +186,13 @@ binds {
 
     // ─── Superes ───
     Super+F                               { toggle-window-floating; }
+    Super+Shift+F                         { toggle-column-tabbed-display; }
 
     Super+CTRL+E                          { expand-column-to-available-width; }
     Super+ALT+E                           { center-column; }
     Super+E                               { fullscreen-window; }
-    Super+Shift+E                         { toggle-column-tabbed-display; }
+    Super+Shift+E                         { expand-column-to-available-width; }
+
 
     // ─── Screenshots ───
 
@@ -192,13 +201,13 @@ binds {
     Alt+Print                             { spawn "sh" "-c" "~/.config/niri/scripts/rice-screenshot.sh"; }
     Ctrl+Shift+Print                      { spawn "sh" "-c" "~/.config/niri/scripts/take-static-screenshot.sh"; }
 
-    //CTRL+Shift+1                          { screenshot; }
-    //CTRL+Shift+Print                      { screenshot-screen; }
-    //CTRL+Shift+3                          { screenshot-window; }
+    //CTRL+Shift+1                        { screenshot; }
+    //CTRL+Shift+Print                    { screenshot-screen; }
+    //CTRL+Shift+3                        { screenshot-window; }
 
         
     // ─── Exit / Power ───
-    Super+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
+    //Super+Shift+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
     Super+Shift+O                         { quit; }
 }
 

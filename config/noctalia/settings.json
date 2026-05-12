@@ -6,7 +6,7 @@
         "clipboardWrapText": true,
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
-        "density": "comfortable",
+        "density": "default",
         "enableClipPreview": true,
         "enableClipboardChips": true,
         "enableClipboardHistory": true,
@@ -37,9 +37,10 @@
             "com.usebottles.bottles.App_e4b7423263950d4ae3c55506ac04ae8c8c3d35d6",
             "com.usebottles.bottles.App_5d9bafdbe275d2ecf8d4d5e254e6743643c9214a",
             "figma-linux",
-            "io.github.elyprismlauncher.ElyPrismLauncher"
+            "io.github.elyprismlauncher.ElyPrismLauncher",
+            "com.anthropic.claude-desktop"
         ],
-        "position": "bottom_center",
+        "position": "center",
         "screenshotAnnotationTool": "",
         "showCategories": true,
         "showIconBackground": false,
@@ -81,7 +82,7 @@
         "middleClickFollowMouse": false,
         "monitors": [
         ],
-        "mouseWheelAction": "none",
+        "mouseWheelAction": "content",
         "mouseWheelWrap": true,
         "outerCorners": true,
         "position": "left",
@@ -187,19 +188,6 @@
                     "showText": true,
                     "textColor": "none",
                     "useFixedWidth": false
-                },
-                {
-                    "defaultSettings": {
-                        "activeBackend": "qt6-multimedia",
-                        "automationMode": "random",
-                        "automationTime": 300,
-                        "fillMode": "fit",
-                        "mpvSocket": "/tmp/mpv-socket",
-                        "profile": "default",
-                        "volume": 1,
-                        "wallpapersFolder": "~/Pictures/Wallpapers"
-                    },
-                    "id": "plugin:video-wallpaper"
                 }
             ],
             "right": [
@@ -291,11 +279,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "monochrome",
+        "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "eDP-1",
-        "predefinedScheme": "Eldritch",
+        "predefinedScheme": "Rose Pine",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": true
@@ -514,7 +502,7 @@
     "hooks": {
         "colorGeneration": "",
         "darkModeChange": "",
-        "enabled": false,
+        "enabled": true,
         "performanceModeDisabled": "",
         "performanceModeEnabled": "",
         "screenLock": "",
@@ -767,9 +755,13 @@
             {
                 "enabled": true,
                 "id": "discord"
+            },
+            {
+                "enabled": true,
+                "id": "kcolorscheme"
             }
         ],
-        "enableUserTheming": false
+        "enableUserTheming": true
     },
     "ui": {
         "boxBorderEnabled": false,
@@ -835,17 +827,17 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Rose Pine",
+                "colorScheme": "Kanagawa",
                 "darkMode": true,
-                "generationMethod": "rainbow",
+                "generationMethod": "monochrome",
                 "paletteColors": [
-                    "#ffb0cc",
-                    "#e2bdc8",
-                    "#f0bc95",
-                    "#ffb4ab"
+                    "#76946a",
+                    "#c0a36e",
+                    "#7e9cd8",
+                    "#c34043"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/My-Burden-is-Light.jpg",
-                "useWallpaperColors": true
+                "useWallpaperColors": false
             },
             {
                 "appearance": "dark",
@@ -1031,7 +1023,7 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Eldritch",
+                "colorScheme": "Ayu",
                 "darkMode": true,
                 "generationMethod": "monochrome",
                 "paletteColors": [
@@ -1041,6 +1033,20 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-jekg6w.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Ayu",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb59e",
+                    "#e7bdb1",
+                    "#d7c68d",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wp15954996.png",
                 "useWallpaperColors": true
             }
         ],
