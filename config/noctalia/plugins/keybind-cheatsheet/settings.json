@@ -16,15 +16,27 @@
           "desc": "noctalia launcher"
         },
         {
-          "keys": "Super + M",
-          "desc": "noctalia control"
+          "keys": "Super + Shift + R",
+          "desc": "noctalia launcher"
         },
         {
-          "keys": "Super + Alt + M",
-          "desc": "noctalia wigets"
+          "keys": "Super + Ctrl + R",
+          "desc": "noctalia launcher"
+        },
+        {
+          "keys": "Super + Alt + R",
+          "desc": "noctalia launcher"
+        },
+        {
+          "keys": "Super + M",
+          "desc": "noctalia settings"
         },
         {
           "keys": "Super + Ctrl + M",
+          "desc": "noctalia wigets"
+        },
+        {
+          "keys": "Super + Alt + M",
           "desc": "noctalia settings"
         },
         {
@@ -41,7 +53,19 @@
         },
         {
           "keys": "Super + I",
-          "desc": "Run: qs -c noctalia-shell ipc call plugin:keybind-cheatsheet toggle"
+          "desc": "Cheet Sheet"
+        },
+        {
+          "keys": "Super + Alt + B",
+          "desc": "calendar"
+        },
+        {
+          "keys": "Super + Ctrl + B",
+          "desc": "calendar"
+        },
+        {
+          "keys": "Super + B",
+          "desc": "noctalia control"
         },
         {
           "keys": "Vol Up",
@@ -131,6 +155,10 @@
         {
           "keys": "Super + Y",
           "desc": "Open sound pad: pwvucontrol"
+        },
+        {
+          "keys": "Super + Alt + Y",
+          "desc": "Run: sh"
         },
         {
           "keys": "Super + P",
@@ -224,19 +252,11 @@
           "desc": "Focus Window Up"
         },
         {
-          "keys": "Super + W",
-          "desc": "Focus Window Up"
-        },
-        {
           "keys": "Super + Down",
           "desc": "Focus Window Down"
         },
         {
           "keys": "Super + J",
-          "desc": "Focus Window Down"
-        },
-        {
-          "keys": "Super + S",
           "desc": "Focus Window Down"
         }
       ]
@@ -245,12 +265,24 @@
       "title": "Workspace Navigation",
       "binds": [
         {
+          "keys": "Super + W",
+          "desc": "Focus Workspace Up"
+        },
+        {
+          "keys": "Super + S",
+          "desc": "Focus Workspace Down"
+        },
+        {
           "keys": "Super + WheelScrollDown",
           "desc": "Focus Workspace Down"
         },
         {
           "keys": "Super + WheelScrollUp",
           "desc": "Focus Workspace Up"
+        },
+        {
+          "keys": "Super + Grave",
+          "desc": "Focus Workspace 9"
         },
         {
           "keys": "Super + 1",
@@ -346,6 +378,10 @@
           "desc": "Move Column Left"
         },
         {
+          "keys": "Super + Shift + Grave",
+          "desc": "Move Column To Workspace 9"
+        },
+        {
           "keys": "Super + Shift + 1",
           "desc": "Move Column To Workspace 1"
         },
@@ -399,8 +435,12 @@
           "desc": "Move Window Up"
         },
         {
-          "keys": "Super + Shift + W",
+          "keys": "Super + Alt + W",
           "desc": "Move Window Up"
+        },
+        {
+          "keys": "Super + Shift + W",
+          "desc": "Move Window To Workspace Up"
         },
         {
           "keys": "Super + Shift + Down",
@@ -411,8 +451,12 @@
           "desc": "Move Window Down"
         },
         {
-          "keys": "Super + Shift + S",
+          "keys": "Super + Alt + S",
           "desc": "Move Window Down"
+        },
+        {
+          "keys": "Super + Shift + S",
+          "desc": "Move Window To Workspace Down"
         }
       ]
     },
@@ -421,20 +465,11 @@
       "binds": [
         {
           "keys": "Super + CTRL + A",
-          "desc": "Set Column Width \" 10%\""
+          "desc": "Set Column Width \" 5%\""
         },
         {
           "keys": "Super + CTRL + D",
-          "desc": "Set Column Width \"+10%\""
-        }
-      ]
-    },
-    {
-      "title": "Power",
-      "binds": [
-        {
-          "keys": "Super + Shift + P",
-          "desc": "Power Off Monitors; } // Turn Off Screens (Useful For OLED Or Privacy)"
+          "desc": "Set Column Width \"+5%\""
         }
       ]
     },
@@ -456,15 +491,19 @@
         },
         {
           "keys": "Super + CTRL + W",
-          "desc": "Set Window Height \" 10%\""
+          "desc": "Set Window Height \" 5%\""
         },
         {
           "keys": "Super + CTRL + S",
-          "desc": "Set Window Height \"+10%\""
+          "desc": "Set Window Height \"+5%\""
         },
         {
           "keys": "Super + F",
           "desc": "Toggle Window Floating"
+        },
+        {
+          "keys": "Super + Shift + F",
+          "desc": "Toggle Column Tabbed Display"
         },
         {
           "keys": "Super + CTRL + E",
@@ -476,7 +515,7 @@
         },
         {
           "keys": "Super + Shift + E",
-          "desc": "Toggle Column Tabbed Display"
+          "desc": "Expand Column To Available Width"
         }
       ]
     }

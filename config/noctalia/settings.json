@@ -827,14 +827,14 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Kanagawa",
+                "colorScheme": "Ayu",
                 "darkMode": true,
                 "generationMethod": "monochrome",
                 "paletteColors": [
-                    "#76946a",
-                    "#c0a36e",
-                    "#7e9cd8",
-                    "#c34043"
+                    "#e6b450",
+                    "#aad94c",
+                    "#39bae6",
+                    "#d95757"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/My-Burden-is-Light.jpg",
                 "useWallpaperColors": false
@@ -878,7 +878,7 @@
                     "#7db2ba",
                     "#ea6962"
                 ],
-                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-4851rk_3840x2160.png",
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-jexovp.png",
                 "useWallpaperColors": false
             },
             {
@@ -892,22 +892,8 @@
                     "#7db2ba",
                     "#ea6962"
                 ],
-                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-jexovp.png",
-                "useWallpaperColors": false
-            },
-            {
-                "appearance": "dark",
-                "colorScheme": "Rose Pine",
-                "darkMode": true,
-                "generationMethod": "rainbow",
-                "paletteColors": [
-                    "#ffb4a6",
-                    "#e7bdb5",
-                    "#dcc48c",
-                    "#ffb4ab"
-                ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-5wr5e9.jpg",
-                "useWallpaperColors": true
+                "useWallpaperColors": false
             },
             {
                 "appearance": "dark",
@@ -1009,20 +995,6 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Rose Pine",
-                "darkMode": true,
-                "generationMethod": "rainbow",
-                "paletteColors": [
-                    "#ffb4ab",
-                    "#e7bdb8",
-                    "#e0c38c",
-                    "#ffb4ab"
-                ],
-                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-49r83k.jpg",
-                "useWallpaperColors": true
-            },
-            {
-                "appearance": "dark",
                 "colorScheme": "Ayu",
                 "darkMode": true,
                 "generationMethod": "monochrome",
@@ -1047,6 +1019,48 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wp15954996.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Rose Pine",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb4ab",
+                    "#e7bdb8",
+                    "#e0c38c",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-49r83k.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Ayu",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb2bd",
+                    "#e5bdc1",
+                    "#eabf8f",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-w8pgx6.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Ayu",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#8fd88a",
+                    "#baccb3",
+                    "#a0cfd4",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/portall-wall11.jpg",
                 "useWallpaperColors": true
             }
         ],

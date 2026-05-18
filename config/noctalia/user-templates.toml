@@ -15,7 +15,7 @@
 #input_path = "/etc/xdg/quickshell/noctalia-shell/Assets/Templates/noctalia.json"
 #output_path = "/home/deltacat/.cache/noctalia/placeholder.json"
 
-# SDDM GREETER
-[templates.sddm]
-input_path = "/usr/share/sddm/themes/noctalia/theme.template.conf"
-output_path = "/usr/share/sddm/themes/noctalia/theme.conf"
+[templates.nvim-base16]
+input_path = "~/.config/nvim/lua/noctalia-template.lua"
+output_path = "~/.config/nvim/lua/noctalia.lua"
+post_hook = 'pkill -SIGUSR1 nvim'
