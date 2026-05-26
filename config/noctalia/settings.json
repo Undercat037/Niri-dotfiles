@@ -14,31 +14,10 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "tabler",
+        "iconMode": "native",
         "ignoreMouseInput": false,
-        "overviewLayer": false,
+        "overviewLayer": true,
         "pinnedApps": [
-            "com.usebottles.bottles.App_89201ef4861c5375f72078f34c72c98e5b44a437",
-            "com.usebottles.bottles",
-            "zen",
-            "obsidian",
-            "com.obsproject.Studio",
-            "vscodium-wayland",
-            "org.gnome.DiskUtility",
-            "org.kde.krita",
-            "steam",
-            "itch",
-            "rog-control-center",
-            "garuda-toolbox",
-            "org.cachyos.KernelManager",
-            "com.usebottles.bottles.App_230728d87fd4977786b5e3df18ab44e6849d14d2",
-            "com.usebottles.bottles.App_827cf4da789ca573d576dcd85b277e12a115a68f",
-            "io.github.ilya_zlobintsev.LACT",
-            "com.usebottles.bottles.App_e4b7423263950d4ae3c55506ac04ae8c8c3d35d6",
-            "com.usebottles.bottles.App_5d9bafdbe275d2ecf8d4d5e254e6743643c9214a",
-            "figma-linux",
-            "io.github.elyprismlauncher.ElyPrismLauncher",
-            "com.anthropic.claude-desktop"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -57,7 +36,7 @@
         "visualizerType": "linear",
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
-        "volumeOverdrive": false,
+        "volumeOverdrive": true,
         "volumeStep": 5
     },
     "bar": {
@@ -613,7 +592,7 @@
     },
     "plugins": {
         "autoUpdate": false,
-        "notifyUpdates": true
+        "notifyUpdates": false
     },
     "sessionMenu": {
         "countdownDuration": 10000,
@@ -759,6 +738,22 @@
             {
                 "enabled": true,
                 "id": "kcolorscheme"
+            },
+            {
+                "enabled": true,
+                "id": "telegram"
+            },
+            {
+                "enabled": true,
+                "id": "code"
+            },
+            {
+                "enabled": true,
+                "id": "foot"
+            },
+            {
+                "enabled": true,
+                "id": "ghostty"
             }
         ],
         "enableUserTheming": true
@@ -785,14 +780,14 @@
         "favorites": [
             {
                 "appearance": "dark",
-                "colorScheme": "Miasma",
+                "colorScheme": "Ayu",
                 "darkMode": true,
                 "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#c9a554",
-                    "#b36d43",
-                    "#bb7744",
-                    "#b36d43"
+                    "#e6b450",
+                    "#aad94c",
+                    "#39bae6",
+                    "#d95757"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/a_black_and_white_photo_of_a_city.png",
                 "useWallpaperColors": false
@@ -827,17 +822,17 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Ayu",
+                "colorScheme": "Oxide",
                 "darkMode": true,
-                "generationMethod": "monochrome",
+                "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#e6b450",
-                    "#aad94c",
-                    "#39bae6",
-                    "#d95757"
+                    "#ffb0cc",
+                    "#e2bdc8",
+                    "#f0bc95",
+                    "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/My-Burden-is-Light.jpg",
-                "useWallpaperColors": false
+                "useWallpaperColors": true
             },
             {
                 "appearance": "dark",
@@ -1061,6 +1056,20 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/portall-wall11.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Rose Pine",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb1c3",
+                    "#e4bdc4",
+                    "#edbe92",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/Cafe.jpg",
                 "useWallpaperColors": true
             }
         ],

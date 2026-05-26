@@ -15,8 +15,12 @@ binds {
 
     // ─── Applications ───
     Super+T                               hotkey-overlay-title="Open Terminal: kitty " { spawn "kitty"; }
-    Super+Ctrl+T                          hotkey-overlay-title="Open Terminal: alacritty " { spawn "alacritty"; }
+    Super+Ctrl+T                          hotkey-overlay-title="Open Terminal: footclient " { spawn "footclient"; }
+    Super+Alt+T                           hotkey-overlay-title="Open Terminal: foot " { spawn "foot"; }
+    Super+Alt+Ctrl+T                      hotkey-overlay-title="Open Terminal: foot server restart " { spawn "sh" "-c" "pkill -f 'foot --server'; foot --server"; }
 
+    Super+Q                               { close-window; }
+    Super+Shift+Q                         { spawn-sh "pkill -9 gamescope"; }
     
     Super+Z                               hotkey-overlay-title="Open Browser: zen" { spawn "zen-browser"; }
     Super+Ctrl+Z                          hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
@@ -30,8 +34,8 @@ binds {
     Super+N                               hotkey-overlay-title="File Manager: Nemo" { spawn "nemo"; }
 
     Super+Y                               hotkey-overlay-title="Open sound pad: pwvucontrol" { spawn "pwvucontrol"; }
-
-    Super+Alt+Y                           { spawn "sh" "-c" "hyprpicker | wl-copy"; }
+    Super+Ctrl+Y                          hotkey-overlay-title="Open sound pad: pwvucontrol" { spawn "pavucontrol"; }
+    Super+Alt+Y                           hotkey-overlay-title="color picker" { spawn "sh" "-c" "hyprpicker | wl-copy"; }
 
     // -------------NOCTALIA------------
 
@@ -77,7 +81,6 @@ binds {
     XF86MonBrightnessDown                 allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call brightness decrease"; }
 
     // ─── Window Movement and Focus ───
-    Super+Q                               { close-window; }
 
     Super+Left                            { focus-column-left; }
     Super+H                               { focus-column-left; }
