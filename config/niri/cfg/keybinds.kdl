@@ -27,11 +27,15 @@ binds {
     Super+Shift+Ctrl+Z                    hotkey-overlay-title="Open Browser Private: zen" { spawn "zen-browser" "--private-window"; }
 
     Super+C                               hotkey-overlay-title="Open TG: AyuGram" { spawn "AyuGram"; }
-    Super+Shift+C                         hotkey-overlay-title="Open IDE: vscodium" { spawn "sh" "-c" "vscodium --ozone-platform=wayland"; }
+    //Super+Shift+C                         hotkey-overlay-title="Open IDE: vscodium" { spawn "sh" "-c" "vscodium --ozone-platform=wayland"; }
+    Super+Shift+C                         hotkey-overlay-title="Open IDE: vscode" { spawn "sh" "-c" "code --ozone-platform=wayland"; }
     Super+Ctrl+C                          hotkey-overlay-title="Open Taskmgr: missioncenter" { spawn "missioncenter"; }
     Super+Alt+C                           hotkey-overlay-title="Open Taskmgr: stacer" { spawn "stacer"; }
 
     Super+N                               hotkey-overlay-title="File Manager: Nemo" { spawn "nemo"; }
+
+    Ctrl+F9                               hotkey-overlay-title="OBS record start" { spawn "obs-cmd" "recording" "start"; }
+    Ctrl+F10                              hotkey-overlay-title="OBS record stop" { spawn "obs-cmd" "recording" "stop"; }
 
     Super+Y                               hotkey-overlay-title="Open sound pad: pwvucontrol" { spawn "pwvucontrol"; }
     Super+Ctrl+Y                          hotkey-overlay-title="Open sound pad: pwvucontrol" { spawn "pavucontrol"; }

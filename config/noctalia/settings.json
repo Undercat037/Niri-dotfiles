@@ -21,7 +21,7 @@
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
-        "showCategories": true,
+        "showCategories": false,
         "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
@@ -78,6 +78,19 @@
         "widgetSpacing": 9,
         "widgets": {
             "center": [
+                {
+                    "defaultSettings": {
+                        "activeColor": "primary",
+                        "camFilterRegex": "",
+                        "enableToast": true,
+                        "hideInactive": false,
+                        "iconSpacing": 4,
+                        "inactiveColor": "none",
+                        "micFilterRegex": "",
+                        "removeMargins": false
+                    },
+                    "id": "plugin:privacy-indicator"
+                }
             ],
             "left": [
                 {
@@ -134,12 +147,41 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
+                    "defaultSettings": {
+                        "connectedColor": "primary",
+                        "disconnectedColor": "none",
+                        "refreshInterval": 5000
+                    },
+                    "id": "plugin:cloudflare-warp"
+                },
+                {
                     "hideWhenZero": false,
                     "hideWhenZeroUnread": false,
                     "iconColor": "none",
                     "id": "NotificationHistory",
                     "showUnreadBadge": true,
                     "unreadBadgeColor": "primary"
+                },
+                {
+                    "defaultSettings": {
+                        "colorHistory": [
+                        ],
+                        "detectedRecorder": "",
+                        "filenameFormat": "",
+                        "gifMaxSeconds": 30,
+                        "installedLangs": [
+                            "eng"
+                        ],
+                        "paletteColors": [
+                        ],
+                        "recordCopyToClipboard": false,
+                        "recordSkipConfirmation": false,
+                        "screenshotPath": "",
+                        "selectedOcrLang": "eng",
+                        "transAvailable": false,
+                        "videoPath": ""
+                    },
+                    "id": "plugin:screen-toolkit"
                 },
                 {
                     "compactMode": false,
@@ -182,6 +224,16 @@
                     ]
                 },
                 {
+                    "defaultSettings": {
+                        "activeColor": "success",
+                        "iconColor": "none",
+                        "inactiveColor": "error",
+                        "refreshInterval": 5000,
+                        "statusState": "all"
+                    },
+                    "id": "plugin:mini-docker"
+                },
+                {
                     "clockColor": "none",
                     "customFont": "",
                     "formatHorizontal": "HH:mm:ss | ddd, MMM dd",
@@ -212,6 +264,15 @@
                     "textColor": "none"
                 },
                 {
+                    "deviceNativePath": "__default__",
+                    "displayMode": "graphic",
+                    "hideIfIdle": false,
+                    "hideIfNotDetected": true,
+                    "id": "Battery",
+                    "showNoctaliaPerformance": true,
+                    "showPowerProfiles": true
+                },
+                {
                     "colorizeDistroLogo": false,
                     "colorizeSystemIcon": "secondary",
                     "colorizeSystemText": "none",
@@ -220,15 +281,6 @@
                     "icon": "noctalia",
                     "id": "ControlCenter",
                     "useDistroLogo": false
-                },
-                {
-                    "deviceNativePath": "__default__",
-                    "displayMode": "graphic",
-                    "hideIfIdle": false,
-                    "hideIfNotDetected": true,
-                    "id": "Battery",
-                    "showNoctaliaPerformance": true,
-                    "showPowerProfiles": true
                 }
             ]
         }
@@ -258,11 +310,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "monochrome",
+        "generationMethod": "fruit-salad",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "eDP-1",
-        "predefinedScheme": "Ayu",
+        "predefinedScheme": "Dracula",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": true
@@ -357,7 +409,7 @@
                     {
                         "id": "Weather",
                         "roundedCorners": true,
-                        "scale": 1.082032481625919,
+                        "scale": 1.0732995471634075,
                         "showBackground": true,
                         "x": 240,
                         "y": 140
@@ -374,6 +426,27 @@
                         "useCustomFont": true,
                         "x": 60,
                         "y": 140
+                    },
+                    {
+                        "defaultSettings": {
+                            "barWidth": 0.6,
+                            "bloomIntensity": 0.5,
+                            "customPrimaryColor": "#6750A4",
+                            "customSecondaryColor": "#625B71",
+                            "fadeWhenIdle": false,
+                            "innerDiameter": 0.7,
+                            "ringOpacity": 0.8,
+                            "rotationSpeed": 0.5,
+                            "sensitivity": 1.5,
+                            "useCustomColors": false,
+                            "visualizationMode": 3,
+                            "waveThickness": 1
+                        },
+                        "id": "plugin:fancy-audiovisualizer",
+                        "scale": 1,
+                        "showBackground": true,
+                        "x": 1620,
+                        "y": 780
                     }
                 ]
             }
@@ -462,7 +535,7 @@
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
         ],
-        "lockScreenTint": 0.03,
+        "lockScreenTint": 0.1,
         "passwordChars": true,
         "radiusRatio": 0.66,
         "reverseScroll": false,
@@ -476,7 +549,7 @@
         "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true,
         "smoothScrollEnabled": true,
-        "telemetryEnabled": false
+        "telemetryEnabled": true
     },
     "hooks": {
         "colorGeneration": "",
@@ -545,8 +618,8 @@
     },
     "notifications": {
         "backgroundOpacity": 1,
-        "clearDismissed": false,
-        "criticalUrgencyDuration": 15,
+        "clearDismissed": true,
+        "criticalUrgencyDuration": 7,
         "density": "default",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
@@ -557,7 +630,7 @@
         "lowUrgencyDuration": 2,
         "monitors": [
         ],
-        "normalUrgencyDuration": 5,
+        "normalUrgencyDuration": 2,
         "overlayLayer": true,
         "respectExpireTimeout": true,
         "saveToHistory": {
@@ -596,7 +669,7 @@
     },
     "sessionMenu": {
         "countdownDuration": 10000,
-        "enableCountdown": true,
+        "enableCountdown": false,
         "largeButtonsLayout": "single-row",
         "largeButtonsStyle": true,
         "position": "center",
@@ -663,27 +736,27 @@
     },
     "settingsVersion": 59,
     "systemMonitor": {
-        "batteryCriticalThreshold": 5,
+        "batteryCriticalThreshold": 10,
         "batteryWarningThreshold": 20,
-        "cpuCriticalThreshold": 90,
+        "cpuCriticalThreshold": 100,
         "cpuWarningThreshold": 80,
-        "criticalColor": "",
+        "criticalColor": "#ffb4ab",
         "diskAvailCriticalThreshold": 10,
         "diskAvailWarningThreshold": 20,
-        "diskCriticalThreshold": 90,
+        "diskCriticalThreshold": 100,
         "diskWarningThreshold": 80,
         "enableDgpuMonitoring": false,
         "externalMonitor": "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor",
         "gpuCriticalThreshold": 90,
         "gpuWarningThreshold": 80,
-        "memCriticalThreshold": 90,
+        "memCriticalThreshold": 100,
         "memWarningThreshold": 80,
-        "swapCriticalThreshold": 90,
+        "swapCriticalThreshold": 100,
         "swapWarningThreshold": 80,
-        "tempCriticalThreshold": 90,
+        "tempCriticalThreshold": 100,
         "tempWarningThreshold": 80,
         "useCustomColors": false,
-        "warningColor": ""
+        "warningColor": "#8fcef3"
     },
     "templates": {
         "activeTemplates": [
@@ -784,13 +857,13 @@
                 "darkMode": true,
                 "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#e6b450",
-                    "#aad94c",
-                    "#39bae6",
-                    "#d95757"
+                    "#b4d269",
+                    "#c3caaa",
+                    "#a1d0c7",
+                    "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/a_black_and_white_photo_of_a_city.png",
-                "useWallpaperColors": false
+                "useWallpaperColors": true
             },
             {
                 "appearance": "dark",
@@ -882,13 +955,13 @@
                 "darkMode": true,
                 "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#a9b665",
-                    "#d8a657",
-                    "#7db2ba",
-                    "#ea6962"
+                    "#ffb4a6",
+                    "#e7bdb5",
+                    "#dcc48c",
+                    "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-5wr5e9.jpg",
-                "useWallpaperColors": false
+                "useWallpaperColors": true
             },
             {
                 "appearance": "dark",
@@ -1070,6 +1143,48 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/Cafe.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Dracula",
+                "darkMode": true,
+                "generationMethod": "fruit-salad",
+                "paletteColors": [
+                    "#ffaedf",
+                    "#f9b1dc",
+                    "#ffb5a0",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/Bansha-Meow-арт.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Dracula",
+                "darkMode": true,
+                "generationMethod": "fruit-salad",
+                "paletteColors": [
+                    "#75d1ff",
+                    "#8ecff2",
+                    "#bec2ff",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/Bansha-Meow-коврик.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Dracula",
+                "darkMode": true,
+                "generationMethod": "fruit-salad",
+                "paletteColors": [
+                    "#7ecefc",
+                    "#95ccf0",
+                    "#c2c1f8",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/Bansha-Meow-hellowin.PNG",
                 "useWallpaperColors": true
             }
         ],
