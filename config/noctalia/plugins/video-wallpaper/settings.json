@@ -11,7 +11,7 @@
   "enabled": false,
   "monitorSpecific": false,
   "eDP-1": {
-    "currentWallpaper": "/home/deltacat/Pictures/Wallpapers/no-game-no-life-zero.3840x2160.mp4",
+    "currentWallpaper": "/home/deltacat/Pictures/Wallpapers/verity.mp4",
     "volume": 1,
     "automation": false,
     "automationMode": "random",
@@ -22,8 +22,7 @@
     "orientation": 0,
     "isPlaying": true,
     "isMuted": false,
-    "noctaliaWallpaper": "/home/deltacat/Pictures/Wallpapers/My-Burden-is-Light.jpg"
+    "noctaliaWallpaper": "/home/deltacat/Pictures/Wallpapers/Bansha-Meow-арт.png"
   },
   "automationCustomTime": []
 }
-

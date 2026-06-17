@@ -310,11 +310,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "fruit-salad",
+        "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "eDP-1",
-        "predefinedScheme": "Dracula",
+        "predefinedScheme": "Ayu",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": true
@@ -600,7 +600,7 @@
         "bluetoothRssiPollIntervalMs": 60000,
         "bluetoothRssiPollingEnabled": false,
         "disableDiscoverability": false,
-        "networkPanelView": "wifi",
+        "networkPanelView": "ethernet",
         "wifiDetailsViewMode": "grid"
     },
     "nightLight": {
@@ -626,7 +626,7 @@
         "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "bottom_right",
+        "location": "top_right",
         "lowUrgencyDuration": 2,
         "monitors": [
         ],
@@ -814,10 +814,6 @@
             },
             {
                 "enabled": true,
-                "id": "telegram"
-            },
-            {
-                "enabled": true,
                 "id": "code"
             },
             {
@@ -895,7 +891,7 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Oxide",
+                "colorScheme": "Dracula",
                 "darkMode": true,
                 "generationMethod": "rainbow",
                 "paletteColors": [
@@ -1067,9 +1063,9 @@
                 "darkMode": true,
                 "generationMethod": "monochrome",
                 "paletteColors": [
-                    "#ffffff",
-                    "#c6c6c6",
-                    "#e2e2e2",
+                    "#ffb4a6",
+                    "#e7bdb5",
+                    "#dcc48c",
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-jekg6w.png",
@@ -1081,9 +1077,9 @@
                 "darkMode": true,
                 "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#ffb59e",
+                    "#ffb49e",
                     "#e7bdb1",
-                    "#d7c68d",
+                    "#d7c58c",
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wp15954996.png",
@@ -1137,9 +1133,9 @@
                 "darkMode": true,
                 "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#ffb1c3",
-                    "#e4bdc4",
-                    "#edbe92",
+                    "#ffb4a6",
+                    "#e7bdb5",
+                    "#dcc48c",
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/Cafe.jpg",
@@ -1147,13 +1143,13 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Dracula",
+                "colorScheme": "Ayu",
                 "darkMode": true,
-                "generationMethod": "fruit-salad",
+                "generationMethod": "rainbow",
                 "paletteColors": [
-                    "#ffaedf",
-                    "#f9b1dc",
                     "#ffb5a0",
+                    "#e7bdb2",
+                    "#d8c58d",
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/Bansha-Meow-арт.png",
