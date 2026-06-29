@@ -2,6 +2,8 @@ file:///home/deltacat/my-files/Archive/ARG-Decoding ARG-Decoding
 file:///home/deltacat/my-files/my-aur-repos my-aur-repos
 file:///home/deltacat/my-files/my-git-repos my-git-repos
 file:///home/deltacat/my-files my-files
+file:///home/deltacat/my-files/tools tools
+file:///home/deltacat/my-files/pentest pentest
 file:///home/deltacat/.local/share/ElyPrismLauncher/instances instances
 file:///home/deltacat/my-files/Ai-promts Ai-promts
 file:///home/deltacat/.local .local
@@ -15,4 +17,5 @@ file:///home/deltacat/Pictures Pictures
 file:///mnt/gentoo gentoo
 file:///mnt/sda1 sda1
 file:///home/deltacat/Bottles Bottles
+file:///usr usr
 file:///mnt mnt
