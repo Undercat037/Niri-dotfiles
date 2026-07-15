@@ -20,7 +20,7 @@
   },
   "translator": {
     "backend": "google",
-    "sourceLanguage": "auto",
+    "sourceLanguage": "en",
     "targetLanguage": "ru",
     "realTimeTranslation": true,
     "deeplApiKey": ""
