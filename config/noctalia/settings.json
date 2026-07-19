@@ -42,10 +42,10 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.93,
+        "backgroundOpacity": 0.5,
         "barType": "simple",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 1,
+        "capsuleOpacity": 0.36,
         "contentPadding": 5,
         "density": "comfortable",
         "displayMode": "always_visible",
@@ -74,7 +74,7 @@
         "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": false,
+        "useSeparateOpacity": true,
         "widgetSpacing": 9,
         "widgets": {
             "center": [
@@ -332,14 +332,14 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "fruit-salad",
+        "generationMethod": "rainbow",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "eDP-1",
-        "predefinedScheme": "Oasis Abyss",
+        "predefinedScheme": "Cherry Blossom",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -858,7 +858,7 @@
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
-        "settingsPanelMode": "attached",
+        "settingsPanelMode": "window",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
         "translucentWidgets": false
@@ -1106,6 +1106,20 @@
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-6klw36_3840x2160.png",
                 "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cherry Blossom",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb68c",
+                    "#e5bfaa",
+                    "#ccc991",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-8gdkpy.jpg",
+                "useWallpaperColors": true
             }
         ],
         "fillColor": "#000000",
