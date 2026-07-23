@@ -42,7 +42,7 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.5,
+        "backgroundOpacity": 0.64,
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 0.36,
@@ -622,7 +622,7 @@
         "bluetoothRssiPollIntervalMs": 60000,
         "bluetoothRssiPollingEnabled": false,
         "disableDiscoverability": false,
-        "networkPanelView": "ethernet",
+        "networkPanelView": "wifi",
         "wifiDetailsViewMode": "grid"
     },
     "nightLight": {
