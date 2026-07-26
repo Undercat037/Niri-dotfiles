@@ -9,12 +9,12 @@ file:///home/deltacat/my-files/Ai-promts Ai-promts
 file:///home/deltacat/.local .local
 file:///home/deltacat/.cache .cache
 file:///home/deltacat/.config .config
-file:///home/deltacat/Documents Documents
-file:///home/deltacat/Downloads Downloads
-file:///home/deltacat/Music Music
+file:///home/deltacat/my-files/def-folders/Documents Documents
+file:///home/deltacat/my-files/def-folders/Downloads Downloads
+file:///home/deltacat/my-files/def-folders/Music Music
 file:///home/deltacat/Games Games
-file:///home/deltacat/Videos Videos
-file:///home/deltacat/Pictures Pictures
+file:///home/deltacat/my-files/def-folders/Videos Videos
+file:///home/deltacat/my-files/def-folders/Pictures Pictures
 file:///mnt/gentoo gentoo
 file:///mnt/sda1 sda1
 file:///home/deltacat/Bottles Bottles
