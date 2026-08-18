@@ -42,10 +42,10 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0.64,
+        "backgroundOpacity": 0.73,
         "barType": "simple",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 0.36,
+        "capsuleOpacity": 0.59,
         "contentPadding": 5,
         "density": "comfortable",
         "displayMode": "always_visible",
@@ -303,6 +303,26 @@
                         "iconColor": "none"
                     },
                     "id": "plugin:color-scheme-creator"
+                },
+                {
+                    "defaultSettings": {
+                        "compactMode": false,
+                        "defaultPeerAction": "copy-ip",
+                        "hideDisconnected": false,
+                        "hideMullvadExitNodes": true,
+                        "loginServer": "",
+                        "pingCount": 5,
+                        "refreshInterval": 5000,
+                        "showIpAddress": true,
+                        "showPeerCount": true,
+                        "showSearchBar": false,
+                        "sshUsername": "",
+                        "taildropDownloadDir": "~/Downloads",
+                        "taildropEnabled": true,
+                        "taildropReceiveMode": "operator",
+                        "terminalCommand": ""
+                    },
+                    "id": "plugin:tailscale"
                 }
             ]
         }
@@ -622,7 +642,7 @@
         "bluetoothRssiPollIntervalMs": 60000,
         "bluetoothRssiPollingEnabled": false,
         "disableDiscoverability": false,
-        "networkPanelView": "wifi",
+        "networkPanelView": "ethernet",
         "wifiDetailsViewMode": "grid"
     },
     "nightLight": {
@@ -845,6 +865,10 @@
             {
                 "enabled": true,
                 "id": "ghostty"
+            },
+            {
+                "enabled": true,
+                "id": "telegram"
             }
         ],
         "enableUserTheming": true
@@ -937,34 +961,6 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/LpUcwjZ.jpg",
-                "useWallpaperColors": true
-            },
-            {
-                "appearance": "dark",
-                "colorScheme": "Cream",
-                "darkMode": true,
-                "generationMethod": "rainbow",
-                "paletteColors": [
-                    "#a9b665",
-                    "#d8a657",
-                    "#7db2ba",
-                    "#ea6962"
-                ],
-                "path": "/home/deltacat/Pictures/Wallpapers/shougan_castle.png",
-                "useWallpaperColors": false
-            },
-            {
-                "appearance": "dark",
-                "colorScheme": "Cream",
-                "darkMode": true,
-                "generationMethod": "rainbow",
-                "paletteColors": [
-                    "#77d1ff",
-                    "#b5c9d7",
-                    "#c9c1ea",
-                    "#ffb4ab"
-                ],
-                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-jexovp.png",
                 "useWallpaperColors": true
             },
             {
@@ -1081,20 +1077,6 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Eldritch",
-                "darkMode": true,
-                "generationMethod": "rainbow",
-                "paletteColors": [
-                    "#b0c6ff",
-                    "#c0c6dc",
-                    "#e0bbdd",
-                    "#ffb4ab"
-                ],
-                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-28rjj6.png",
-                "useWallpaperColors": true
-            },
-            {
-                "appearance": "dark",
                 "colorScheme": "Oasis Abyss",
                 "darkMode": true,
                 "generationMethod": "fruit-salad",
@@ -1119,6 +1101,90 @@
                     "#ffb4ab"
                 ],
                 "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-8gdkpy.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cyberpunk",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#c4a82e",
+                    "#d14358",
+                    "#00a66c",
+                    "#b32d2d"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/ddg_1774599941568874389.jpg",
+                "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cherry Blossom",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb783",
+                    "#e4bfa7",
+                    "#c8ca94",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/ddg_1774783320741072709.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cherry Blossom",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb2b8",
+                    "#e5bdbf",
+                    "#e8c08e",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/sunset-lookout.jpg",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cherry Blossom",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ffb782",
+                    "#e4bfa7",
+                    "#c7ca95",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-m32qe9.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cherry Blossom",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#a5d576",
+                    "#bfcbad",
+                    "#a0cfcc",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-p9ml3j_3840x2160.png",
+                "useWallpaperColors": true
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Cherry Blossom",
+                "darkMode": true,
+                "generationMethod": "rainbow",
+                "paletteColors": [
+                    "#ecc248",
+                    "#d5c5a0",
+                    "#aecfad",
+                    "#ffb4ab"
+                ],
+                "path": "/home/deltacat/Pictures/Wallpapers/wallhaven-nk95pq_3840x2160.png",
                 "useWallpaperColors": true
             }
         ],
