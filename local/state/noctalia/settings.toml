@@ -1,0 +1,399 @@
+config_version = 14
+
+[audio]
+enable_overdrive = true
+sound_volume = 0.50999998860061169
+
+[backdrop]
+blur_intensity = 0.82999998144805431
+enabled = true
+tint_intensity = 0.61999998614192009
+
+[bar]
+order = [ "leftbar", "overlay" ]
+
+    [bar.leftbar]
+    end = [
+        "widget",
+        "keyboard_layout",
+        "volume",
+        "brightness",
+        "bluetooth",
+        "network",
+        "battery",
+        "control-center",
+        "session"
+    ]
+    margin_ends = 0
+    position = "left"
+    radius = 0
+    start = [
+        "launcher",
+        "workspaces",
+        "wallpaper",
+        "notifications",
+        "clipboard",
+        "network-manager-restart",
+        "warp",
+        "bar",
+        "mini-docker"
+    ]
+    thickness = 33
+    widget_spacing = 11
+
+    [bar.overlay]
+    capsule = true
+    end = [
+        "tray",
+        "keyboard_layout",
+        "notifications",
+        "clipboard",
+        "group:g3",
+        "network",
+        "bluetooth",
+        "brightness",
+        "battery",
+        "control-center"
+    ]
+    layer = "overlay"
+    margin_ends = 10
+    padding = 9
+    radius = 17
+    reserve_space = false
+    show_on_workspace_switch = false
+    smart_auto_hide = true
+    start = [ "group:g2", "group:g1", "privacy", "media" ]
+
+        [[bar.overlay.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "cpu", "ram", "temp" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.overlay.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "network_tx", "network_rx" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.overlay.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_variant"
+        id = "g3"
+        members = [ "input_volume", "volume" ]
+        opacity = 1.0
+        padding = 6.0
+
+[control_center]
+width = 980
+
+    [control_center.calendar]
+    show_week_numbers = true
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "wallpaper"
+
+    [[control_center.shortcuts]]
+    type = "dark_mode"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
+
+    [desktop_widgets.grid]
+    cell_size = 24
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 152.0
+    box_width = 168.0
+    cx = 1780.0
+    cy = 976.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 128.0
+    box_width = 320.0
+    cx = 224.0
+    cy = 108.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background_opacity = 1.0
+        hide_when_no_media = false
+        layout = "horizontal"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 88.0
+    box_width = 256.0
+    cx = 192.0
+    cy = 228.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background_opacity = 1.0
+
+[dock]
+cross_axis_padding = 7
+enabled = true
+icon_size = 35
+pinned = [ "obsidian", "com.obsproject.Studio", "steam", "equibop", "com.ayugram.desktop" ]
+reserve_space = false
+smart_auto_hide = true
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[notification]
+background_opacity = 0.99999997764825821
+border_color = "primary"
+filter_order = [ "filter" ]
+history_retention_hours = 8
+
+    [notification.filter.filter]
+    allow_permanent = false
+    allowed_urgencies = [ "critical" ]
+    bypass_dnd = false
+    enabled = true
+    match = "qbittorrent"
+    play_sound = false
+    save_history = false
+    show_toast = false
+
+[osd]
+border_color = "primary"
+
+[plugin_settings."noctalia/translator"]
+target_lang = "ru"
+
+[plugins]
+auto_update = "official"
+enabled = [ "levi/warp", "rylos/tailnet", "8bury/mini-docker", "kenn/keybind-cheatsheet", "alexander/screen-toolkit" ]
+
+[shell]
+clipboard_auto_paste = "off"
+external_ip_enabled = true
+niri_overview_type_to_launch_enabled = true
+password_style = "random"
+polkit_agent = true
+
+    [shell.launcher]
+    app_grid = true
+    categories = false
+    pinned = [ "obsidian", "steam", "blender", "com.obsproject.Studio", "equibop" ]
+    show_app_actions = true
+
+    [shell.panel]
+    session_placement = "floating"
+    session_position = "center"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 14
+
+    [shell.screenshot]
+    annotate = false
+    copy_to_clipboard = true
+    directory = "/home/deltacat/Pictures/Screenshots"
+    filename_pattern = "Screenshot-%Y:%m:%d-%H:%M:%S"
+    freeze_screen = true
+    save_to_file = true
+
+    [shell.session]
+    grid = true
+
+        [[shell.session.actions]]
+        action = "lock"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "1"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "3"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "logout"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "2"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "reboot"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "4"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "command"
+        command = "systemctl reboot --firmware"
+        countdown_seconds = 0.0
+        enabled = true
+        glyph = "reboot"
+        label = "ReBoot to UEFI"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "shutdown"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "5"
+        variant = "destructive"
+
+[theme]
+builtin = "Gruvbox"
+community_palette = "Occult Umbral"
+mode = "auto"
+source = "wallpaper"
+wallpaper_scheme = "m3-rainbow"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "kitty", "niri", "qt" ]
+    community_ids = [ "zen-browser", "blender", "zed", "steam", "fastfetch", "obs", "bat", "fzf" ]
+
+[wallpaper]
+directory = "/home/deltacat/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-3q6kmd_3840x2160.png"
+
+    [wallpaper.last]
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-3q6kmd_3840x2160.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-3q6kmd_3840x2160.png"
+
+    [[wallpaper.favorite]]
+    path = "/home/deltacat/Pictures/Wallpapers/Bansha-Meow-арт.png"
+
+    [[wallpaper.favorite]]
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-jekg6w.png"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/deltacat/Pictures/Wallpapers/Cyberpunk1.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+    [[wallpaper.favorite]]
+    path = "/home/deltacat/Pictures/Wallpapers/Cyberpunk2.png"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-3q6kmd_3840x2160.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
+[widget.bar]
+show_count = false
+type = "rylos/tailnet:bar"
+
+[widget.bluetooth]
+hide_when_no_connected_device = true
+
+[widget.clock]
+format = "{:%H:%M:%S | %y.%m.%d}"
+timezone = "Europe/Kyiv"
+vertical_format = "{:%H}\\n{:%M}\\n{:%S}\\n—\\n{:%m}\\n{:%d}"
+
+[widget.mini-docker]
+show_count = false
+status_mode = "hidden"
+type = "8bury/mini-docker:mini-docker"
+
+[widget.network-manager-restart]
+glyph = "brand-netbeans"
+type = "custom_button"
+
+    [widget.network-manager-restart.actions]
+    middle = "exec systemctl restart NetworkManager"
+
+[widget.tray]
+drawer = true
+
+[widget.warp]
+type = "levi/warp:warp"
+
+[widget.widget]
+type = "alexander/screen-toolkit:widget"

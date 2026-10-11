@@ -1,0 +1,8 @@
+[storage]
+key_source = "file"
+key_file = "/home/deltacat/my-files/0a-Sys-settings/noctalia-k3y"
+
+[theme.templates.user.nvim-base16]
+input_path = "~/.config/nvim/lua/noctalia-template.lua"
+output_path = "~/.config/nvim/lua/noctalia.lua"
+post_hook = "pkill -SIGUSR1 nvim"
