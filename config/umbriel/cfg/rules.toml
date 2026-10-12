@@ -1,0 +1,41 @@
+# ────────────── Window / layer rules ──────────────
+# app_id/title: `umbriel windows`
+
+[[window_rule]]
+match.app_id = '^kitty$'
+blur = true
+blur_ignore_alpha = 0.5
+blur_optimized = true
+
+[[window_rule]]
+match.app_id = '^foot$'
+blur = true
+blur_ignore_alpha = 0.5
+blur_optimized = true
+
+[[window_rule]]
+match.app_id = '^dev[.]noctalia[.]Noctalia$'
+default_floating = true
+default_floating_size_px = { width = 1080, height = 920 }
+
+[[window_rule]]
+match.app_id = '^steam$'
+default_floating = true
+
+[[window_rule]]
+match.app_id = '^steam$'
+match.title = '^[Ss]team$'
+default_floating = false
+
+[[window_rule]]
+match.app_id = '^steam$'
+match.title = '^notificationtoasts_\d+_desktop$'
+default_floating = true
+default_position = { x = 10, y = 10, anchor = "bottom_right" }
+default_focused = false
+
+[[layer_rule]]
+match.namespace = '^noctalia-(bar-[^"]+|notification|dock|panel|attached-panel|osd)$'
+blur = true
+blur_ignore_alpha = 0.5
+blur_optimized = false

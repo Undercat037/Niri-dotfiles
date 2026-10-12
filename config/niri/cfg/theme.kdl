@@ -1,0 +1,8 @@
+cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 16
+}
+environment {
+    XCURSOR_THEME "Adwaita"
+    XCURSOR_SIZE "16"
+}

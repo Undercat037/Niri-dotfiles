@@ -36,7 +36,8 @@ order = [ "leftbar", "overlay" ]
         "network-manager-restart",
         "warp",
         "bar",
-        "mini-docker"
+        "mini-docker",
+        "toggle"
     ]
     thickness = 33
     widget_spacing = 11
@@ -110,9 +111,6 @@ width = 980
     type = "bluetooth"
 
     [[control_center.shortcuts]]
-    type = "nightlight"
-
-    [[control_center.shortcuts]]
     type = "power_profile"
 
     [[control_center.shortcuts]]
@@ -121,12 +119,15 @@ width = 980
     [[control_center.shortcuts]]
     type = "dark_mode"
 
+    [[control_center.shortcuts]]
+    type = "vn1k/cursor:shortcut"
+
 [desktop_widgets]
 schema_version = 2
-widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000003", "desktop-widget-0000000000000007" ]
 
     [desktop_widgets.grid]
-    cell_size = 24
+    cell_size = 16
     major_interval = 4
     visible = true
 
@@ -144,27 +145,11 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
         background = false
 
-    [desktop_widgets.widget.desktop-widget-0000000000000002]
-    box_height = 128.0
-    box_width = 320.0
-    cx = 224.0
-    cy = 108.0
-    output = "eDP-1"
-    placement_height = 1080.0
-    placement_width = 1920.0
-    rotation = 0.0
-    type = "media_player"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
-        background_opacity = 1.0
-        hide_when_no_media = false
-        layout = "horizontal"
-
     [desktop_widgets.widget.desktop-widget-0000000000000003]
     box_height = 88.0
     box_width = 256.0
     cx = 192.0
-    cy = 228.0
+    cy = 240.0
     output = "eDP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -174,6 +159,29 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
         [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
         background_opacity = 1.0
 
+    [desktop_widgets.widget.desktop-widget-0000000000000007]
+    box_height = 128.0
+    box_width = 304.0
+    cx = 216.0
+    cy = 124.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = -0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000007.settings]
+        background = true
+        background_color = "surface"
+        background_opacity = 1.0
+        background_padding = 10
+        background_radius = 12
+        color = "on_surface"
+        font_family = ""
+        hide_when_no_media = false
+        layout = "horizontal"
+        shadow = true
+
 [dock]
 cross_axis_padding = 7
 enabled = true
@@ -182,15 +190,45 @@ pinned = [ "obsidian", "com.obsproject.Studio", "steam", "equibop", "com.ayugram
 reserve_space = false
 smart_auto_hide = true
 
+[lockscreen]
+blurred_desktop = true
+
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@WL-1", "lockscreen-login-box@eDP-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 928.5093994140625
+    cy = 866.0
+    output = "WL-1"
+    placement_height = 1048.0
+    placement_width = 1855.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 196.0
@@ -204,6 +242,33 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 465.0076904296875
+    cy = 835.5784912109375
+    output = "winit"
+    placement_height = 1012.0
+    placement_width = 929.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -238,12 +303,25 @@ history_retention_hours = 8
 [osd]
 border_color = "primary"
 
+[plugin_settings."alexander/screen-toolkit"]
+result_layer = "overlay"
+
+[plugin_settings."kenn/keybind-cheatsheet"]
+cheatsheet_layer = "overlay"
+
 [plugin_settings."noctalia/translator"]
 target_lang = "ru"
 
 [plugins]
 auto_update = "official"
-enabled = [ "levi/warp", "rylos/tailnet", "8bury/mini-docker", "kenn/keybind-cheatsheet", "alexander/screen-toolkit" ]
+enabled = [
+    "levi/warp",
+    "rylos/tailnet",
+    "8bury/mini-docker",
+    "kenn/keybind-cheatsheet",
+    "alexander/screen-toolkit",
+    "decksters-lab/palette-creator"
+]
 
 [shell]
 clipboard_auto_paste = "off"
@@ -322,15 +400,15 @@ polkit_agent = true
         variant = "destructive"
 
 [theme]
-builtin = "Gruvbox"
-community_palette = "Occult Umbral"
-mode = "auto"
+builtin = "Ayu"
+community_palette = "ADW"
+mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-rainbow"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "kitty", "niri", "qt" ]
-    community_ids = [ "zen-browser", "blender", "zed", "steam", "fastfetch", "obs", "bat", "fzf" ]
+    builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "kitty", "niri", "qt", "umbriel" ]
+    community_ids = [ "zen-browser", "ayugram", "telegram", "blender", "zed", "steam", "fastfetch", "obs", "bat", "fzf" ]
 
 [wallpaper]
 directory = "/home/deltacat/Pictures/Wallpapers"
@@ -357,7 +435,10 @@ directory = "/home/deltacat/Pictures/Wallpapers"
     wallpaper_scheme = "m3-rainbow"
 
     [[wallpaper.favorite]]
+    community_palette = "Tokyo Night Storm"
+    palette_source = "community"
     path = "/home/deltacat/Pictures/Wallpapers/Cyberpunk2.png"
+    theme_mode = "dark"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -388,6 +469,9 @@ type = "custom_button"
 
     [widget.network-manager-restart.actions]
     middle = "exec systemctl restart NetworkManager"
+
+[widget.toggle]
+type = "decksters-lab/palette-creator:toggle"
 
 [widget.tray]
 drawer = true

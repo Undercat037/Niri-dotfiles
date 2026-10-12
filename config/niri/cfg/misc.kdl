@@ -8,7 +8,7 @@
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
         XDG_CURRENT_DESKTOP "niri"
         XDG_SESSION_TYPE "wayland"
-        
+
         #GDK_BACKEND "wayland,x11,*"
         GTK_APPLICATION_PREFER_DARK_THEME "1"
         XDG_MENU_PREFIX "arch-"
@@ -20,7 +20,7 @@
         __GL_VRR_ALLOWED "1"
         __GL_SHADER_DISK_CACHE "1"
         __GL_SHADER_DISK_CACHE_PATH "/home/deltacat/.cache/nvidia/GLCache"
-        
+
         LIBVA_DRIVER_NAME "nvidia"
         NVD_BACKEND "direct"
 
@@ -31,11 +31,6 @@
         DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1 "1"
 
         _JAVA_AWT_WM_NONREPARENTING "1"
-    }
-
-    cursor {
-        xcursor-theme "capitaine-cursors"
-        xcursor-size 20
     }
 
     debug {

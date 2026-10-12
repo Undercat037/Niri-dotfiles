@@ -9,3 +9,4 @@ include "./cfg/misc.kdl"
 
 include "./noctalia.kdl"
 
+include "./cfg/theme.kdl"

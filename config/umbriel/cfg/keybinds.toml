@@ -1,0 +1,175 @@
+# ────────────── Keybinds ──────────────
+
+[keybinds]
+
+# ─── Applications ───
+"Mod+T" = "spawn:kitty"
+"Mod+Ctrl+T" = "spawn:footclient"
+"Mod+Alt+T" = "spawn:foot"
+"Mod+Alt+Ctrl+T" = "spawn:pkill -f 'foot --server'; foot --server"
+
+"Mod+Q" = "window-close"
+"Mod+Shift+Q" = "spawn:pkill -9 gamescope"
+
+"Mod+Z" = "spawn:zen-browser"
+"Mod+Ctrl+Z" = "spawn:firefox"
+"Mod+Shift+Ctrl+Z" = "spawn:zen-browser --private-window"
+
+"Mod+C" = "spawn:AyuGram"
+"Mod+Ctrl+C" = "spawn:zeditor"
+"Mod+Shift+C" = "spawn:code --ozone-platform=wayland"
+"Mod+Ctrl+Alt+C" = "spawn:missioncenter"
+"Mod+Alt+C" = "spawn:stacer"
+
+"Mod+N" = "spawn:nautilus --new-window"
+"Mod+Alt+N" = "spawn:nemo"
+
+"Ctrl+F9" = "spawn:obs-cmd recording start"
+"Ctrl+F10" = "spawn:obs-cmd recording stop"
+
+"Mod+Y" = "spawn:pwvucontrol"
+"Mod+Ctrl+Y" = "spawn:pavucontrol"
+"Mod+Alt+Y" = "spawn:hyprpicker | wl-copy"
+
+# ─── Noctalia v5 ───
+"Mod+Alt+L" = "spawn:noctalia msg session lock"
+"Mod+Escape" = "spawn:noctalia msg panel-toggle session"
+
+"Mod+R" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Shift+R" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Ctrl+R" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Alt+R" = "spawn:noctalia msg settings-toggle"
+
+"Mod+M" = "spawn:noctalia msg settings-toggle"
+"Mod+Ctrl+M" = "spawn:noctalia msg desktop-widgets-edit"
+"Mod+Alt+M" = "spawn:noctalia msg settings-toggle"
+
+"Mod+V" = "spawn:noctalia msg panel-toggle clipboard"
+
+"Mod+U" = "spawn:noctalia msg panel-toggle wallpaper"
+"Mod+Ctrl+U" = "spawn:noctalia msg wallpaper-random"
+
+"Mod+P" = "spawn:pkill -x noctalia; noctalia"
+
+"Mod+I" = "spawn:noctalia msg panel-toggle kenn/keybind-cheatsheet:cheatsheet"
+
+"Mod+Alt+B" = "spawn:noctalia msg panel-toggle control-center calendar"
+"Mod+Ctrl+B" = "spawn:noctalia msg panel-toggle control-center notifications"
+"Mod+B" = "spawn:noctalia msg panel-toggle control-center"
+
+"Mod+F11" = "spawn:noctalia msg dpms-off"
+
+# ─── Media / Brightness ───
+"XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true }
+"XF86AudioMicMute" = { action = "spawn:noctalia msg mic-mute", allow_when_locked = true }
+"XF86AudioNext" = { action = "spawn:noctalia msg media-next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn:noctalia msg media-previous", allow_when_locked = true }
+"XF86AudioPlay" = { action = "spawn:noctalia msg media-play-pause", allow_when_locked = true }
+"XF86AudioPause" = { action = "spawn:noctalia msg media-play-pause", allow_when_locked = true }
+"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down", allow_when_locked = true }
+
+# ─── Focus ───
+"Mod+Left" = "window-focus-left"
+"Mod+A" = "window-focus-left"
+
+"Mod+Right" = "window-focus-right"
+"Mod+D" = "window-focus-right"
+
+"Mod+Up" = "window-focus-up"
+"Mod+W" = "window-focus-up"
+
+"Mod+Down" = "window-focus-down"
+"Mod+S" = "window-focus-down"
+
+# ─── Move ───
+"Mod+Shift+Left" = "column-move-left"
+"Mod+Shift+A" = "column-move-left"
+"Mod+Ctrl+A" = "window-swap-left"
+"Mod+Alt+A" = "window-modify-primary-extent:-0.05"
+"Mod+Alt+Left" = "window-modify-primary-extent:-0.05"
+
+"Mod+Shift+Right" = "column-move-right"
+"Mod+Shift+D" = "column-move-right"
+"Mod+Ctrl+D" = "window-swap-right"
+"Mod+Alt+D" = "window-modify-primary-extent:0.05"
+"Mod+Alt+Right" = "window-modify-primary-extent:0.05"
+
+"Mod+Shift+Up" = "window-move-up"
+"Mod+Shift+W" = "window-move-up"
+"Mod+Ctrl+W" = "window-swap-up"
+"Mod+Alt+W" = "window-modify-secondary-extent:0.05"
+"Mod+Alt+Up" = "window-modify-secondary-extent:0.05"
+
+"Mod+Shift+Down" = "window-move-down"
+"Mod+Shift+S" = "window-move-down"
+"Mod+Ctrl+S" = "window-swap-down"
+"Mod+Alt+S" = "window-modify-secondary-extent:-0.05"
+"Mod+Alt+Down" = "window-modify-secondary-extent:-0.05"
+
+
+# ─── Wheel ───
+"Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
+"Mod+WheelUp" = { action = "workspace-previous", cooldown_ms = 150 }
+"Mod+Ctrl+WheelDown" = { action = "column-move-to-workspace-next", cooldown_ms = 150 }
+"Mod+Ctrl+WheelUp" = { action = "column-move-to-workspace-previous", cooldown_ms = 150 }
+
+"Mod+WheelRight" = "window-focus-right"
+"Mod+WheelLeft" = "window-focus-left"
+"Mod+Ctrl+WheelRight" = "column-move-right"
+"Mod+Ctrl+WheelLeft" = "column-move-left"
+
+"Mod+Shift+WheelDown" = "window-focus-right"
+"Mod+Shift+WheelUp" = "window-focus-left"
+"Mod+Ctrl+Shift+WheelDown" = "column-move-right"
+"Mod+Ctrl+Shift+WheelUp" = "column-move-left"
+
+# ─── Workspaces ───
+"Mod+Grave" = "scratchpad-toggle:alpha"
+"Mod+1" = "workspace-switch:1"
+"Mod+2" = "workspace-switch:2"
+"Mod+3" = "workspace-switch:3"
+"Mod+4" = "workspace-switch:4"
+"Mod+5" = "workspace-switch:5"
+"Mod+6" = "workspace-switch:6"
+"Mod+7" = "workspace-switch:7"
+"Mod+8" = "workspace-switch:8"
+"Mod+9" = "workspace-switch:9"
+"Mod+0" = "workspace-switch:10"
+
+"Mod+Shift+Grave" = "window-move-to-scratchpad:alpha"
+"Mod+Shift+1" = "column-move-to-workspace:1"
+"Mod+Shift+2" = "column-move-to-workspace:2"
+"Mod+Shift+3" = "column-move-to-workspace:3"
+"Mod+Shift+4" = "column-move-to-workspace:4"
+"Mod+Shift+5" = "column-move-to-workspace:5"
+"Mod+Shift+6" = "column-move-to-workspace:6"
+"Mod+Shift+7" = "column-move-to-workspace:7"
+"Mod+Shift+8" = "column-move-to-workspace:8"
+"Mod+Shift+9" = "column-move-to-workspace:9"
+"Mod+Shift+0" = "column-move-to-workspace:10"
+
+"Mod+Tab" = { action = "overview-toggle", repeat = false }
+
+# ─── Окна ───
+"Mod+F" = "window-toggle-floating"
+"Mod+Shift+F" = "column-toggle-tabbed"
+
+"Mod+Ctrl+E" = "window-toggle-maximize"
+"Mod+Shift+E" = "window-toggle-maximize"
+"Mod+Alt+E" = "column-center"
+"Mod+E" = "window-toggle-fullscreen"
+
+# ─── Tiling hotswap ───
+"Mod+X" = "workspace-set-layout:toggle:dwindle,master"
+
+# ─── Screenshots ───
+"Alt+Print" = "spawn:noctalia msg screenshot-annotate"
+"Shift+Print" = "spawn:noctalia msg screenshot-region"
+"Shift+Ctrl+Print" = "spawn:noctalia msg screenshot-fullscreen"
+"Print" = "spawn:noctalia msg screenshot-fullscreen"
+
+# ─── Exit ───
+"Mod+Shift+O" = "session-quit"

@@ -1,0 +1,21 @@
+# ────────────── Input ──────────────
+
+[input]
+client_window_drag = false
+
+[input.keyboard]
+layout = "us,ru,us,ua"
+options = "grp:win_space_toggle,ctrl:nocaps"
+
+[input.touchpad]
+tap = true
+scroll_factor = 0.6
+natural_scroll = false
+
+[input.focus]
+follows_mouse = true
+
+[input.cursor]
+theme = "Adwaita"
+size = 16
+hardware_cursor = false

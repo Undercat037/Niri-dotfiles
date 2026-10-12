@@ -1,0 +1,35 @@
+# ────────────── General / autostart / env ──────────────
+
+[general]
+autostart = ["noctalia"]
+xwayland = true
+show_cheatsheet = false
+focus_on_activate = false
+
+[workspaces]
+back_and_forth = false
+
+[[scratchpad]]
+name = "alpha"
+
+[environment]
+ELECTRON_OZONE_PLATFORM_HINT = "auto"
+QT_QPA_PLATFORM = "wayland"
+QT_QPA_PLATFORMTHEME = "gtk3"
+QT_WAYLAND_DISABLE_WINDOWDECORATION = "1"
+GTK_APPLICATION_PREFER_DARK_THEME = "1"
+XDG_MENU_PREFIX = "arch-"
+
+__GLX_VENDOR_LIBRARY_NAME = "nvidia"
+__GL_GSYNC_ALLOWED = "1"
+__GL_VRR_ALLOWED = "1"
+__GL_SHADER_DISK_CACHE = "1"
+__GL_SHADER_DISK_CACHE_PATH = "/home/deltacat/.cache/nvidia/GLCache"
+
+LIBVA_DRIVER_NAME = "nvidia"
+NVD_BACKEND = "direct"
+
+SDL_AUDIO_DRIVER = "pulse"
+STEAM_FORCE_DESKTOPUI_SCALING = "1"
+DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1 = "1"
+_JAVA_AWT_WM_NONREPARENTING = "1"

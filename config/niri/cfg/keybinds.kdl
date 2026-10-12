@@ -88,38 +88,30 @@ binds {
     // ─── Window Movement and Focus ───
 
     Super+Left                            { focus-column-left; }
-    Super+H                               { focus-column-left; }
     Super+A                               { focus-column-left; }
 
     Super+Right                           { focus-column-right; }
-    Super+L                               { focus-column-right; }
     Super+D                               { focus-column-right; }
 
     Super+Up                              { focus-window-up; }
-    Super+K                               { focus-window-up; }
     Super+W                               { focus-workspace-up; }
 
     Super+Down                            { focus-window-down; }
-    Super+J                               { focus-window-down; }
     Super+S                               { focus-workspace-down; }
 
 
 
     Super+Shift+Left                      { move-column-left; }
-    Super+Shift+H                         { move-column-left; }
     Super+Shift+A                         { move-column-left; }
 
     Super+Shift+Right                     { move-column-right; }
-    Super+Shift+L                         { move-column-right; }
     Super+Shift+D                         { move-column-right; }
 
     Super+Shift+UP                        { move-window-up; }
-    Super+Shift+K                         { move-window-up; }
     Super+Alt+W                           { move-window-up; }
     Super+Shift+W                         { move-window-to-workspace-up; }
 
     Super+Shift+Down                      { move-window-down; }
-    Super+Shift+J                         { move-window-down; }
     Super+Alt+S                           { move-window-down; }
     Super+Shift+S                         { move-window-to-workspace-down; }
 
@@ -192,8 +184,8 @@ binds {
     Alt+Print                             { spawn "noctalia" "msg" "screenshot-annotate"; }
     Shift+Print                           { spawn "noctalia" "msg" "screenshot-region"; }
     Print                                 { spawn "noctalia" "msg" "screenshot-fullscreen"; }
-
+    Shift+Ctrl+Print                      { spawn "noctalia" "msg" "screenshot-fullscreen"; }
 
     // ─── Exit / Power ───
-    Super+Shift+O                           { quit; }
+    Super+Shift+O                         { quit; }
 }

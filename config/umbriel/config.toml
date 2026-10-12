@@ -1,0 +1,15 @@
+# ────────────── Umbriel ──────────────
+[include]
+files = [
+    "cfg/general.toml",
+    "cfg/display.toml",
+    "cfg/input.toml",
+    "cfg/appearance.toml",
+    "cfg/layout.toml",
+    "cfg/layout-mode.toml",
+    "cfg/keybinds.toml",
+    "cfg/rules.toml",
+]
+
+[include.optional]
+files = ["noctalia.toml"]
