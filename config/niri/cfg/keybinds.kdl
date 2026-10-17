@@ -54,12 +54,13 @@ binds {
 
     Super+M                               hotkey-overlay-title="noctalia settings" { spawn-sh "noctalia msg settings-toggle"; }
     Super+Ctrl+M                          hotkey-overlay-title="noctalia desktop widgets edit" { spawn-sh "noctalia msg desktop-widgets-edit"; }
-    Super+Alt+M                           hotkey-overlay-title="noctalia settings" { spawn-sh "noctalia msg settings-toggle"; }
+    Super+Alt+M                           hotkey-overlay-title="noctalia settings" { spawn-sh "noctalia msg desktop-widgets-edit"; }
 
     Super+V                               hotkey-overlay-title="noctalia clipboard" { spawn-sh "noctalia msg panel-toggle clipboard"; }
 
     Super+U                               hotkey-overlay-title="noctalia wall" { spawn-sh "noctalia msg panel-toggle wallpaper"; }
-    Super+Ctrl+U                          hotkey-overlay-title="noctalia wall rand" { spawn-sh "noctalia msg wallpaper-random"; }
+    Super+Ctrl+U                          hotkey-overlay-title="noctalia wallhaven" { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
+    Super+Alt+U                           hotkey-overlay-title="noctalia wallhaven" { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
 
     Super+P                               hotkey-overlay-title="Restart Noctalia" { spawn-sh "pkill -x noctalia; noctalia"; }
 

@@ -1,4 +1,4 @@
-config_version = 14
+config_version = 15
 
 [audio]
 enable_overdrive = true
@@ -31,6 +31,7 @@ order = [ "leftbar", "overlay" ]
         "launcher",
         "workspaces",
         "wallpaper",
+        "wallhaven",
         "notifications",
         "clipboard",
         "network-manager-restart",
@@ -186,7 +187,15 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
 cross_axis_padding = 7
 enabled = true
 icon_size = 35
-pinned = [ "obsidian", "com.obsproject.Studio", "steam", "equibop", "com.ayugram.desktop" ]
+pinned = [
+    "ai.storyteller.figcraft",
+    "ai.storyteller.photocraft",
+    "obsidian",
+    "com.ayugram.desktop",
+    "steam",
+    "com.obsproject.Studio",
+    "equibop"
+]
 reserve_space = false
 smart_auto_hide = true
 
@@ -260,11 +269,11 @@ widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@WL-1", "loc
     [lockscreen_widgets.widget."lockscreen-login-box@winit"]
     box_height = 196.0
     box_width = 810.0
-    cx = 465.0076904296875
-    cy = 835.5784912109375
+    cx = 460.00222778320312
+    cy = 865.3026123046875
     output = "winit"
-    placement_height = 1012.0
-    placement_width = 929.0
+    placement_height = 1048.0
+    placement_width = 919.0
     rotation = 0.0
     type = "login_box"
 
@@ -288,7 +297,8 @@ widget_order = [ "lockscreen-login-box@winit", "lockscreen-login-box@WL-1", "loc
 background_opacity = 0.99999997764825821
 border_color = "primary"
 filter_order = [ "filter" ]
-history_retention_hours = 8
+history_retention_hours = 5
+offset_y = 44
 
     [notification.filter.filter]
     allow_permanent = false
@@ -312,6 +322,12 @@ cheatsheet_layer = "overlay"
 [plugin_settings."noctalia/translator"]
 target_lang = "ru"
 
+[plugin_settings."noctalia/wallhaven"]
+api_key = "ZfHvgRmeX94L2BV5xd5esdSW6aicONaR"
+
+[plugin_settings."noctalia/wallpaper_depth"]
+threshold = 100
+
 [plugins]
 auto_update = "official"
 enabled = [
@@ -320,11 +336,14 @@ enabled = [
     "8bury/mini-docker",
     "kenn/keybind-cheatsheet",
     "alexander/screen-toolkit",
-    "decksters-lab/palette-creator"
+    "decksters-lab/palette-creator",
+    "noctalia/screen_recorder",
+    "noctalia/wallhaven"
 ]
 
 [shell]
 clipboard_auto_paste = "off"
+clipboard_history_max_entries = 800
 external_ip_enabled = true
 niri_overview_type_to_launch_enabled = true
 password_style = "random"
@@ -332,8 +351,17 @@ polkit_agent = true
 
     [shell.launcher]
     app_grid = true
+    auto_paste = "off"
     categories = false
-    pinned = [ "obsidian", "steam", "blender", "com.obsproject.Studio", "equibop" ]
+    default_view = "all"
+    pinned = [
+        "obsidian",
+        "steam",
+        "com.obsproject.Studio",
+        "equibop",
+        "ai.storyteller.photocraft",
+        "ai.storyteller.figcraft"
+    ]
     show_app_actions = true
 
     [shell.panel]
@@ -401,26 +429,26 @@ polkit_agent = true
 
 [theme]
 builtin = "Ayu"
-community_palette = "ADW"
+community_palette = "Flexoki"
 mode = "dark"
-source = "wallpaper"
+source = "community"
 wallpaper_scheme = "m3-rainbow"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "kitty", "niri", "qt", "umbriel" ]
-    community_ids = [ "zen-browser", "ayugram", "telegram", "blender", "zed", "steam", "fastfetch", "obs", "bat", "fzf" ]
+    community_ids = [ "ayugram", "telegram", "blender", "zed", "steam", "fastfetch", "obs", "bat", "fzf" ]
 
 [wallpaper]
 directory = "/home/deltacat/Pictures/Wallpapers"
 
     [wallpaper.default]
-    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-3q6kmd_3840x2160.png"
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-2edkyg_3840x2160.png"
 
     [wallpaper.last]
-    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-3q6kmd_3840x2160.png"
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-2edkyg_3840x2160.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-3q6kmd_3840x2160.png"
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-2edkyg_3840x2160.png"
 
     [[wallpaper.favorite]]
     path = "/home/deltacat/Pictures/Wallpapers/Bansha-Meow-арт.png"
@@ -446,6 +474,12 @@ directory = "/home/deltacat/Pictures/Wallpapers"
     theme_mode = "dark"
     wallpaper_scheme = "m3-rainbow"
 
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/deltacat/Pictures/Wallpapers/wallhaven-2edkyg_3840x2160.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-rainbow"
+
 [widget.bar]
 show_count = false
 type = "rylos/tailnet:bar"
@@ -456,7 +490,7 @@ hide_when_no_connected_device = true
 [widget.clock]
 format = "{:%H:%M:%S | %y.%m.%d}"
 timezone = "Europe/Kyiv"
-vertical_format = "{:%H}\\n{:%M}\\n{:%S}\\n—\\n{:%m}\\n{:%d}"
+vertical_format = "{:%H}\\n{:%M}\\n{:%S}\\n—\\n{:%y}\\n{:%m}\\n{:%d}"
 
 [widget.mini-docker]
 show_count = false
@@ -475,6 +509,9 @@ type = "decksters-lab/palette-creator:toggle"
 
 [widget.tray]
 drawer = true
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
 
 [widget.warp]
 type = "levi/warp:warp"

@@ -32,7 +32,6 @@ layer-rule {
     match namespace="^noctalia-wallpaper*"
 }
 
-// Рекомендуется для overview backdrop (v5)
 layer-rule {
     match namespace="^noctalia-backdrop"
     place-within-backdrop true

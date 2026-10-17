@@ -1,6 +1,6 @@
 [storage]
 key_source = "file"
-key_file = "/home/deltacat/my-files/0a-Sys-settings/noctalia-k3y"
+key_file = "/home/deltacat/my-files/0a-Sys-settings/k375/noctalia-k3y"
 
 [theme.templates.user.nvim-base16]
 input_path = "~/.config/nvim/lua/noctalia-template.lua"

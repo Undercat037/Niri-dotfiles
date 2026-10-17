@@ -90,12 +90,14 @@
 "Mod+Ctrl+A" = "window-swap-left"
 "Mod+Alt+A" = "window-modify-primary-extent:-0.05"
 "Mod+Alt+Left" = "window-modify-primary-extent:-0.05"
+"Mod+Ctrl+Shift+A" = { action = "workspace-previous", cooldown_ms = 150 }
 
 "Mod+Shift+Right" = "column-move-right"
 "Mod+Shift+D" = "column-move-right"
 "Mod+Ctrl+D" = "window-swap-right"
 "Mod+Alt+D" = "window-modify-primary-extent:0.05"
 "Mod+Alt+Right" = "window-modify-primary-extent:0.05"
+"Mod+Ctrl+Shift+D" = { action = "workspace-next", cooldown_ms = 150 }
 
 "Mod+Shift+Up" = "window-move-up"
 "Mod+Shift+W" = "window-move-up"
@@ -116,15 +118,6 @@
 "Mod+Ctrl+WheelDown" = { action = "column-move-to-workspace-next", cooldown_ms = 150 }
 "Mod+Ctrl+WheelUp" = { action = "column-move-to-workspace-previous", cooldown_ms = 150 }
 
-"Mod+WheelRight" = "window-focus-right"
-"Mod+WheelLeft" = "window-focus-left"
-"Mod+Ctrl+WheelRight" = "column-move-right"
-"Mod+Ctrl+WheelLeft" = "column-move-left"
-
-"Mod+Shift+WheelDown" = "window-focus-right"
-"Mod+Shift+WheelUp" = "window-focus-left"
-"Mod+Ctrl+Shift+WheelDown" = "column-move-right"
-"Mod+Ctrl+Shift+WheelUp" = "column-move-left"
 
 # ─── Workspaces ───
 "Mod+Grave" = "scratchpad-toggle:alpha"
